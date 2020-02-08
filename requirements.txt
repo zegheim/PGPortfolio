@@ -1,4 +1,4 @@
-tensorflow>=1.0.0
+tensorflow>=1.0.0, <2.0.0
 tflearn>=0.3.2
 pympler>=0.5
 cvxopt>=1.1.9
