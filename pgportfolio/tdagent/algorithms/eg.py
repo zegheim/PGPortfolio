@@ -2,6 +2,7 @@
 from ..tdagent import TDAgent
 import numpy as np
 
+
 class EG(TDAgent):
     """ Exponentiated Gradient (EG) algorithm by Helmbold et al.
 
@@ -26,14 +27,13 @@ class EG(TDAgent):
 
     def decide_by_history(self, x, last_b):
         self.record_history(x)
-        x = self.history[-1,:].ravel()
+        x = self.history[-1, :].ravel()
         if self.last_b is None:
             self.last_b = np.ones(x.size) / x.size
         if self.b is None:
             self.init_pw(x)
         else:
-            self.b = self.last_b * np.exp(self.eta * x.T / np.dot(x,last_b))
+            self.b = self.last_b * np.exp(self.eta * x.T / np.dot(x, last_b))
         b = self.b / np.sum(self.b)
         self.last_b = b
         return b
-

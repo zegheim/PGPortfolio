@@ -10,7 +10,9 @@ from pgportfolio.learn.tradertrainer import TraderTrainer
 from pgportfolio.tools.configprocess import load_config
 
 
-def train_one(save_path, config, log_file_dir, index, logfile_level, console_level, device):
+def train_one(
+    save_path, config, log_file_dir, index, logfile_level, console_level, device
+):
     """
     train an agent
     :param save_path: the path to save the tensorflow model (.ckpt), could be None
@@ -24,13 +26,18 @@ def train_one(save_path, config, log_file_dir, index, logfile_level, console_lev
     :return : the Result namedtuple
     """
     if log_file_dir:
-        logging.basicConfig(filename=log_file_dir.replace("tensorboard","programlog"),
-                            level=logfile_level)
+        logging.basicConfig(
+            filename=log_file_dir.replace("tensorboard", "programlog"),
+            level=logfile_level,
+        )
         console = logging.StreamHandler()
         console.setLevel(console_level)
         logging.getLogger().addHandler(console)
     print("training at %s started" % index)
-    return TraderTrainer(config, save_path=save_path, device=device).train_net(log_file_dir=log_file_dir, index=index)
+    return TraderTrainer(config, save_path=save_path, device=device).train_net(
+        log_file_dir=log_file_dir, index=index
+    )
+
 
 def train_all(processes=1, device="cpu"):
     """
@@ -47,7 +54,9 @@ def train_all(processes=1, device="cpu"):
         console_level = logging.WARNING
         logfile_level = logging.INFO
     train_dir = "train_package"
-    if not os.path.exists("./" + train_dir): #if the directory does not exist, creates one
+    if not os.path.exists(
+        "./" + train_dir
+    ):  # if the directory does not exist, creates one
         os.makedirs("./" + train_dir)
     all_subdir = os.listdir("./" + train_dir)
     all_subdir.sort()
@@ -57,12 +66,22 @@ def train_all(processes=1, device="cpu"):
         if not str.isdigit(dir):
             return
         # NOTE: logfile is for compatibility reason
-        if not (os.path.isdir("./"+train_dir+"/"+dir+"/tensorboard") or os.path.isdir("./"+train_dir+"/"+dir+"/logfile")):
-            p = Process(target=train_one, args=(
-                "./" + train_dir + "/" + dir + "/netfile",
-                load_config(dir),
-                "./" + train_dir + "/" + dir + "/tensorboard",
-                dir, logfile_level, console_level, device))
+        if not (
+            os.path.isdir("./" + train_dir + "/" + dir + "/tensorboard")
+            or os.path.isdir("./" + train_dir + "/" + dir + "/logfile")
+        ):
+            p = Process(
+                target=train_one,
+                args=(
+                    "./" + train_dir + "/" + dir + "/netfile",
+                    load_config(dir),
+                    "./" + train_dir + "/" + dir + "/tensorboard",
+                    dir,
+                    logfile_level,
+                    console_level,
+                    device,
+                ),
+            )
             p.start()
             pool.append(p)
         else:
@@ -76,6 +95,6 @@ def train_all(processes=1, device="cpu"):
                 alive = p.is_alive()
                 if not alive:
                     pool.remove(p)
-            if len(pool)<processes:
+            if len(pool) < processes:
                 wait = False
     print("All the Tasks are Over")

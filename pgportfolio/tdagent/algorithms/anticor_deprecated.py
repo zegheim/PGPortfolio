@@ -4,6 +4,7 @@ import warnings
 import pandas as pd
 from pandas.stats.moments import rolling_corr
 
+
 class ANTICOR(TDAgent):
     """ Anticor (anti-correlation) is a heuristic portfolio selection algorithm.
     It adopts the consistency of positive lagged cross-correlation and negative
@@ -27,13 +28,12 @@ class ANTICOR(TDAgent):
         self.window = window
         self.c_version = c_version
 
-
     def decide_by_history(self, x, last_b=None):
         self.record_history(x)
         window = self.window
         port = pd.DataFrame(self.history)
         n, m = port.shape
-        weights = 1. / m * np.ones(port.shape)
+        weights = 1.0 / m * np.ones(port.shape)
 
         CORR, EX = rolling_corr(port, port.shift(window))
 
@@ -41,7 +41,9 @@ class ANTICOR(TDAgent):
             try:
                 from scipy import weave
             except ImportError:
-                warnings.warn('scipy.weave is not available in python3, falling back to python version')
+                warnings.warn(
+                    "scipy.weave is not available in python3, falling back to python version"
+                )
                 self.c_version = False
 
         if self.c_version is False:
@@ -54,7 +56,8 @@ class ANTICOR(TDAgent):
 
                 for i in range(m):
                     for j in range(m):
-                        if i == j: continue
+                        if i == j:
+                            continue
 
                         if mu[i] > mu[j] and M[i, j] > 0:
                             claim[i, j] += M[i, j]
@@ -65,16 +68,19 @@ class ANTICOR(TDAgent):
                                 claim[i, j] += abs(M[j, j])
 
                 # calculate transfer
-                transfer = claim * 0.
+                transfer = claim * 0.0
                 for i in range(m):
                     total_claim = sum(claim[i, :])
                     if total_claim != 0:
                         transfer[i, :] = weights[t, i] * claim[i, :] / total_claim
 
                 # update weights
-                weights[t + 1, :] = weights[t, :] + np.sum(transfer, axis=0) - np.sum(transfer, axis=1)
+                weights[t + 1, :] = (
+                    weights[t, :] + np.sum(transfer, axis=0) - np.sum(transfer, axis=1)
+                )
 
         else:
+
             def get_weights_c(c, mu, w):
                 code = """
                 int t,i,j;
@@ -125,14 +131,16 @@ class ANTICOR(TDAgent):
                     }
                 }
                 """
-                return weave.inline(code, ['c', 'mu', 'w'])
+                return weave.inline(code, ["c", "mu", "w"])
 
             get_weights_c(CORR, EX, weights)
 
-        return weights[-1,:]
+        return weights[-1, :]
+
 
 def rolling_corr(x, y):
-    '''Rolling correlation between columns from x and y'''
+    """Rolling correlation between columns from x and y"""
+
     def rolling(dataframe):
         ret = dataframe.copy()
         for col in ret:
@@ -143,17 +151,17 @@ def rolling_corr(x, y):
 
     EX = rolling(x)
     EY = rolling(y)
-    EX2 = rolling(x**2)
-    EY2 = rolling(y**2)
+    EX2 = rolling(x ** 2)
+    EY2 = rolling(y ** 2)
 
-    RXY = np.zeros((n,k,k))
+    RXY = np.zeros((n, k, k))
 
     for i, col_x in enumerate(x):
         for j, col_y in enumerate(y):
             DX = EX2[col_x] - EX[col_x] ** 2
             DY = EY2[col_y] - EY[col_y] ** 2
             product_xy = x[col_x] * y[col_y]
-            RXY[:, i, j] = product_xy.rolling(window=5).mean()- EX[col_x] * EY[col_y]
+            RXY[:, i, j] = product_xy.rolling(window=5).mean() - EX[col_x] * EY[col_y]
             RXY[:, i, j] = RXY[:, i, j] / np.sqrt(DX * DY)
 
     return RXY, EX.values

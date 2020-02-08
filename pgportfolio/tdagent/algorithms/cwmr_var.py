@@ -4,9 +4,11 @@ import scipy.stats
 from numpy.linalg import inv
 from numpy import diag, sqrt, log, trace
 
+
 class CWMR_VAR(TDAgent):
     """ First variant of a CWMR outlined in original article. It is
     only approximation to the posted problem. """
+
     def __init__(self, eps=-0.5, confidence=0.95, sigma=None):
         """
         :param eps: Mean reversion threshold (expected return on current day must be lower
@@ -16,7 +18,7 @@ class CWMR_VAR(TDAgent):
         super(CWMR_VAR, self).__init__()
         # input check
         if not (0 <= confidence <= 1):
-            raise ValueError('confidence must be from interval [0,1]')
+            raise ValueError("confidence must be from interval [0,1]")
 
         self.eps = eps
         self.theta = scipy.stats.norm.ppf(confidence)
@@ -24,13 +26,12 @@ class CWMR_VAR(TDAgent):
 
     def init_portfolio(self, X):
         m = X.shape[1]
-        self.sigma = np.matrix(np.eye(m) / m**2)
-
+        self.sigma = np.matrix(np.eye(m) / m ** 2)
 
     def decide_by_history(self, x, last_b):
         x = self.get_last_rpv(x)
-        x = np.reshape(x, (1,x.size))
-        last_b = np.reshape(last_b, (1,last_b.size))
+        x = np.reshape(x, (1, x.size))
+        last_b = np.reshape(last_b, (1, last_b.size))
         if self.sigma is None:
             self.init_portfolio(x)
         # initialize
@@ -39,7 +40,7 @@ class CWMR_VAR(TDAgent):
         sigma = self.sigma
         theta = self.theta
         eps = self.eps
-        x = np.matrix(x).T    # matrices are easier to manipulate
+        x = np.matrix(x).T  # matrices are easier to manipulate
 
         # 4. Calculate the following variables
         M = (mu.T * x).mean()
@@ -51,11 +52,10 @@ class CWMR_VAR(TDAgent):
 
         # 6. Normalize mu and sigma
         mu = self.simplex_proj(mu)
-        sigma = sigma / (m**2 * trace(sigma))
+        sigma = sigma / (m ** 2 * trace(sigma))
         """
         sigma(sigma < 1e-4*eye(m)) = 1e-4;
         """
         self.sigma = sigma
 
         return np.ravel(mu)
-

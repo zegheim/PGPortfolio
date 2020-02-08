@@ -8,8 +8,16 @@ from pgportfolio.tools.trade import calculate_pv_after_commission
 
 class BackTest(trader.Trader):
     def __init__(self, config, net_dir=None, agent=None, agent_type="nn"):
-        trader.Trader.__init__(self, 0, config, 0, net_dir,
-                               initial_BTC=1, agent=agent, agent_type=agent_type)
+        trader.Trader.__init__(
+            self,
+            0,
+            config,
+            0,
+            net_dir,
+            initial_BTC=1,
+            agent=agent,
+            agent_type=agent_type,
+        )
         if agent_type == "nn":
             data_matrices = self._rolling_trainer.data_matrices
         elif agent_type == "traditional":
@@ -71,12 +79,13 @@ class BackTest(trader.Trader):
         logging.info("the step is {}".format(self._steps))
         logging.debug("the raw omega is {}".format(omega))
         future_price = np.concatenate((np.ones(1), self.__get_matrix_y()))
-        pv_after_commission = calculate_pv_after_commission(omega, self._last_omega, self._commission_rate)
+        pv_after_commission = calculate_pv_after_commission(
+            omega, self._last_omega, self._commission_rate
+        )
         portfolio_change = pv_after_commission * np.dot(omega, future_price)
         self._total_capital *= portfolio_change
-        self._last_omega = pv_after_commission * omega * \
-                           future_price /\
-                           portfolio_change
-        logging.debug("the portfolio change this period is : {}".format(portfolio_change))
+        self._last_omega = pv_after_commission * omega * future_price / portfolio_change
+        logging.debug(
+            "the portfolio change this period is : {}".format(portfolio_change)
+        )
         self.__test_pc_vector.append(portfolio_change)
-

@@ -1,10 +1,18 @@
-from __future__ import division,absolute_import,print_function
+from __future__ import division, absolute_import, print_function
 import numpy as np
 import logging
 
 
 class ReplayBuffer:
-    def __init__(self, start_index, end_index, batch_size, is_permed, coin_number, sample_bias=1.0):
+    def __init__(
+        self,
+        start_index,
+        end_index,
+        batch_size,
+        is_permed,
+        coin_number,
+        sample_bias=1.0,
+    ):
         """
         :param start_index: start index of the training set on the global data matrices
         :param end_index: end index of the training set on the global data matrices
@@ -38,13 +46,20 @@ class ReplayBuffer:
         batch = []
         if self.__is_permed:
             for i in range(self.__batch_size):
-                batch.append(self.__experiences[self.__sample(self.__experiences[0].state_index,
-                                                              self.__experiences[-1].state_index,
-                                                              self.__sample_bias)])
+                batch.append(
+                    self.__experiences[
+                        self.__sample(
+                            self.__experiences[0].state_index,
+                            self.__experiences[-1].state_index,
+                            self.__sample_bias,
+                        )
+                    ]
+                )
         else:
-            batch_start = self.__sample(0, len(self.__experiences) - self.__batch_size,
-                                        self.__sample_bias)
-            batch = self.__experiences[batch_start:batch_start+self.__batch_size]
+            batch_start = self.__sample(
+                0, len(self.__experiences) - self.__batch_size, self.__sample_bias
+            )
+            batch = self.__experiences[batch_start : batch_start + self.__batch_size]
         return batch
 
 

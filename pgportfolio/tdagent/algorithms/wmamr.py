@@ -20,15 +20,13 @@ class WMAMR(PAMR):
         super(WMAMR, self).__init__()
 
         if window < 1:
-            raise ValueError('window parameter must be >=1')
+            raise ValueError("window parameter must be >=1")
         self.window = window
-
 
     def decide_by_history(self, x, last_b):
         self.record_history(x)
-        xx = np.mean(self.history[-self.window:,], axis=0)
+        xx = np.mean(self.history[-self.window :,], axis=0)
         # calculate return prediction
         b = self.update(last_b, xx, self.eps, self.C)
 
         return b
-

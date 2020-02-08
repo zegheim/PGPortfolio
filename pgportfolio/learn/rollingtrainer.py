@@ -7,11 +7,19 @@ import tflearn
 
 
 class RollingTrainer(TraderTrainer):
-    def __init__(self, config, restore_dir=None, save_path=None, agent=None, device="cpu"):
+    def __init__(
+        self, config, restore_dir=None, save_path=None, agent=None, device="cpu"
+    ):
         config["training"]["buffer_biased"] = config["trading"]["buffer_biased"]
         config["training"]["learning_rate"] = config["trading"]["learning_rate"]
-        TraderTrainer.__init__(self, config, restore_dir=restore_dir, save_path=save_path,
-                               agent=agent, device=device)
+        TraderTrainer.__init__(
+            self,
+            config,
+            restore_dir=restore_dir,
+            save_path=save_path,
+            agent=agent,
+            device=device,
+        )
 
     @property
     def agent(self):
@@ -34,16 +42,23 @@ class RollingTrainer(TraderTrainer):
         if not fast_train:
             tflearn.is_training(False, self._agent.session)
 
-            v_pv, v_log_mean = self._evaluate("validation",
-                                              self._agent.portfolio_value,
-                                              self._agent.log_mean)
-            t_pv, t_log_mean = self._evaluate("test", self._agent.portfolio_value, self._agent.log_mean)
+            v_pv, v_log_mean = self._evaluate(
+                "validation", self._agent.portfolio_value, self._agent.log_mean
+            )
+            t_pv, t_log_mean = self._evaluate(
+                "test", self._agent.portfolio_value, self._agent.log_mean
+            )
             loss_value = self._evaluate("training", self._agent.loss)
 
-            logging.info('training loss is %s\n' % loss_value)
-            logging.info('the portfolio value on validation asset is %s\nlog_mean is %s\n' %
-                         (v_pv,v_log_mean))
-            logging.info('the portfolio value on test asset is %s\n mean is %s' % (t_pv,t_log_mean))
+            logging.info("training loss is %s\n" % loss_value)
+            logging.info(
+                "the portfolio value on validation asset is %s\nlog_mean is %s\n"
+                % (v_pv, v_log_mean)
+            )
+            logging.info(
+                "the portfolio value on test asset is %s\n mean is %s"
+                % (t_pv, t_log_mean)
+            )
 
     def decide_by_history(self, history, last_w):
         result = self._agent.decide_by_history(history, last_w)

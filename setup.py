@@ -10,6 +10,16 @@ setup(
     long_description=readme,
     author="Zhengyao Jiang, Dixing Xu, Jinjun Liang",
     author_email="",
-    packages=find_packages(exclude=("tests", "docs"),
-                           include=("matplotlib", "tensorflow", "tflearn", "pandas",
-                                    "pandas", "cvxopt", "scipy")))
+    packages=find_packages(
+        exclude=("tests", "docs"),
+        include=(
+            "matplotlib",
+            "tensorflow",
+            "tflearn",
+            "pandas",
+            "pandas",
+            "cvxopt",
+            "scipy",
+        ),
+    ),
+)

@@ -4,11 +4,15 @@ import time
 from datetime import datetime
 import json
 import os
-rootpath = os.path.dirname(os.path.abspath(__file__)).\
-    replace("\\pgportfolio\\tools", "").replace("/pgportfolio/tools","")
+
+rootpath = (
+    os.path.dirname(os.path.abspath(__file__))
+    .replace("\\pgportfolio\\tools", "")
+    .replace("/pgportfolio/tools", "")
+)
 
 try:
-    unicode        # Python 2
+    unicode  # Python 2
 except NameError:
     unicode = str  # Python 3
 
@@ -62,9 +66,11 @@ def fill_layers_default(layers):
             set_missing(layer, "weight_decay", 0.0)
         elif layer["type"] == "EIIE_LSTM" or layer["type"] == "EIIE_RNN":
             set_missing(layer, "dropouts", None)
-        elif layer["type"] == "EIIE_Output" or\
-                layer["type"] == "Output_WithW" or\
-                layer["type"] == "EIIE_Output_WithW":
+        elif (
+            layer["type"] == "EIIE_Output"
+            or layer["type"] == "Output_WithW"
+            or layer["type"] == "EIIE_Output_WithW"
+        ):
             set_missing(layer, "regularizer", None)
             set_missing(layer, "weight_decay", 0.0)
         elif layer["type"] == "DropOut":
@@ -80,8 +86,7 @@ def set_missing(config, name, value):
 
 def byteify(input):
     if isinstance(input, dict):
-        return {byteify(key): byteify(value)
-                for key, value in input.iteritems()}
+        return {byteify(key): byteify(value) for key, value in input.iteritems()}
     elif isinstance(input, list):
         return [byteify(element) for element in input]
     elif isinstance(input, unicode):
@@ -100,10 +105,12 @@ def load_config(index=None):
      if a integer, load the config under train_package
     """
     if index:
-        with open(rootpath+"/train_package/" + str(index) + "/net_config.json") as file:
+        with open(
+            rootpath + "/train_package/" + str(index) + "/net_config.json"
+        ) as file:
             config = json.load(file)
     else:
-        with open(rootpath+"/pgportfolio/" + "net_config.json") as file:
+        with open(rootpath + "/pgportfolio/" + "net_config.json") as file:
             config = json.load(file)
     return preprocess_config(config)
 
@@ -119,4 +126,3 @@ def check_input_same(config1, config2):
         return False
     else:
         return True
-

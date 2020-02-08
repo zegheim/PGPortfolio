@@ -7,39 +7,49 @@ import logging
 import json
 import numpy as np
 import datetime
-from pgportfolio.tools.indicator import max_drawdown, sharpe, positive_count, negative_count, moving_accumulate
+from pgportfolio.tools.indicator import (
+    max_drawdown,
+    sharpe,
+    positive_count,
+    negative_count,
+    moving_accumulate,
+)
 from pgportfolio.tools.configprocess import parse_time, check_input_same
 from pgportfolio.tools.shortcut import execute_backtest
 
 # the dictionary of name of indicators mapping to the function of related indicators
 # input is portfolio changes
-INDICATORS = {"portfolio value": np.prod,
-              "sharpe ratio": sharpe,
-              "max drawdown": max_drawdown,
-              "positive periods": positive_count,
-              "negative periods": negative_count,
-              "postive day": lambda pcs: positive_count(moving_accumulate(pcs, 48)),
-              "negative day": lambda pcs: negative_count(moving_accumulate(pcs, 48)),
-              "postive week": lambda pcs: positive_count(moving_accumulate(pcs, 336)),
-              "negative week": lambda pcs: negative_count(moving_accumulate(pcs, 336)),
-              "average": np.mean}
+INDICATORS = {
+    "portfolio value": np.prod,
+    "sharpe ratio": sharpe,
+    "max drawdown": max_drawdown,
+    "positive periods": positive_count,
+    "negative periods": negative_count,
+    "postive day": lambda pcs: positive_count(moving_accumulate(pcs, 48)),
+    "negative day": lambda pcs: negative_count(moving_accumulate(pcs, 48)),
+    "postive week": lambda pcs: positive_count(moving_accumulate(pcs, 336)),
+    "negative week": lambda pcs: negative_count(moving_accumulate(pcs, 336)),
+    "average": np.mean,
+}
 
-NAMES = {"best": "Best Stock (Benchmark)",
-         "crp": "UCRP (Benchmark)",
-         "ubah": "UBAH (Benchmark)",
-         "anticor": "ANTICOR",
-         "olmar": "OLMAR",
-         "pamr": "PAMR",
-         "cwmr": "CWMR",
-         "rmr": "RMR",
-         "ons": "ONS",
-         "up": "UP",
-         "eg": "EG",
-         "bk": "BK",
-         "corn": "CORN",
-         "m0": "M0",
-         "wmamr": "WMAMR"
-         }
+NAMES = {
+    "best": "Best Stock (Benchmark)",
+    "crp": "UCRP (Benchmark)",
+    "ubah": "UBAH (Benchmark)",
+    "anticor": "ANTICOR",
+    "olmar": "OLMAR",
+    "pamr": "PAMR",
+    "cwmr": "CWMR",
+    "rmr": "RMR",
+    "ons": "ONS",
+    "up": "UP",
+    "eg": "EG",
+    "bk": "BK",
+    "corn": "CORN",
+    "m0": "M0",
+    "wmamr": "WMAMR",
+}
+
 
 def plot_backtest(config, algos, labels=None):
     """
@@ -50,22 +60,25 @@ def plot_backtest(config, algos, labels=None):
     for i, algo in enumerate(algos):
         if algo.isdigit():
             results.append(np.cumprod(_load_from_summary(algo, config)))
-            logging.info("load index "+algo+" from csv file")
+            logging.info("load index " + algo + " from csv file")
         else:
-            logging.info("start executing "+algo)
+            logging.info("start executing " + algo)
             results.append(np.cumprod(execute_backtest(algo, config)))
-            logging.info("finish executing "+algo)
+            logging.info("finish executing " + algo)
 
     start, end = _extract_test(config)
     timestamps = np.linspace(start, end, len(results[0]))
-    dates = [datetime.datetime.fromtimestamp(int(ts)-int(ts)%config["input"]["global_period"])
-             for ts in timestamps]
+    dates = [
+        datetime.datetime.fromtimestamp(
+            int(ts) - int(ts) % config["input"]["global_period"]
+        )
+        for ts in timestamps
+    ]
 
     weeks = mdates.WeekdayLocator()
     days = mdates.DayLocator()
 
-    rc("font", **{"family": "sans-serif", "sans-serif": ["Helvetica"],
-                  "size": 8})
+    rc("font", **{"family": "sans-serif", "sans-serif": ["Helvetica"], "size": 8})
 
     """
     styles = [("-", None), ("--", None), ("", "+"), (":", None),
@@ -79,7 +92,7 @@ def plot_backtest(config, algos, labels=None):
         else:
             label = NAMES[algos[i]]
         ax.semilogy(dates, pvs, linewidth=1, label=label)
-        #ax.plot(dates, pvs, linewidth=1, label=label)
+        # ax.plot(dates, pvs, linewidth=1, label=label)
 
     plt.ylabel("portfolio value $p_t/p_0$", fontsize=12)
     plt.xlabel("time", fontsize=12)
@@ -93,15 +106,15 @@ def plot_backtest(config, algos, labels=None):
     ax.xaxis.set_major_formatter(xfmt)
     plt.grid(True)
     plt.tight_layout()
-    ax.legend(loc="upper left", prop={"size":10})
+    ax.legend(loc="upper left", prop={"size": 10})
     fig.autofmt_xdate()
-    plt.savefig("result.eps", bbox_inches='tight',
-                pad_inches=0)
+    plt.savefig("result.eps", bbox_inches="tight", pad_inches=0)
     plt.show()
 
 
-def table_backtest(config, algos, labels=None, format="raw",
-                   indicators=list(INDICATORS.keys())):
+def table_backtest(
+    config, algos, labels=None, format="raw", indicators=list(INDICATORS.keys())
+):
     """
     @:param config: config dictionary
     @:param algos: list of strings representing the name of algorithms
@@ -125,16 +138,18 @@ def table_backtest(config, algos, labels=None, format="raw",
         for indicator in indicators:
             indicator_result[indicator] = INDICATORS[indicator](portfolio_changes)
         results.append(indicator_result)
-        if len(labels)<=i:
+        if len(labels) <= i:
             labels.append(NAMES[algo])
 
     dataframe = pd.DataFrame(results, index=labels)
 
     start, end = _extract_test(config)
-    start = datetime.datetime.fromtimestamp(start - start%config["input"]["global_period"])
-    end = datetime.datetime.fromtimestamp(end - end%config["input"]["global_period"])
+    start = datetime.datetime.fromtimestamp(
+        start - start % config["input"]["global_period"]
+    )
+    end = datetime.datetime.fromtimestamp(end - end % config["input"]["global_period"])
 
-    print("backtest start from "+ str(start) + " to " + str(end))
+    print("backtest start from " + str(start) + " to " + str(end))
     if format == "html":
         print(dataframe.to_html())
     elif format == "latex":
@@ -142,7 +157,7 @@ def table_backtest(config, algos, labels=None, format="raw",
     elif format == "raw":
         print(dataframe.to_string())
     elif format == "csv":
-        dataframe.to_csv("./compare"+end.strftime("%Y-%m-%d")+".csv")
+        dataframe.to_csv("./compare" + end.strftime("%Y-%m-%d") + ".csv")
     else:
         raise ValueError("The format " + format + " is not supported")
 
@@ -166,4 +181,3 @@ def _load_from_summary(index, config):
     if not check_input_same(config, json.loads(dataframe.loc[int(index)]["config"])):
         raise ValueError("the date of this index is not the same as the default config")
     return np.fromstring(history_string, sep=",")[:-1]
-

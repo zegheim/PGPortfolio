@@ -22,10 +22,9 @@ class M0(TDAgent):
         x = self.get_last_rpv(x)
         m = x.size
         if self.C is None:
-            self.C = np.zeros((m,1))
-        b = (self.C + self.beta) / (m * self.beta + np.ones((1,m)).dot(self.C))
+            self.C = np.zeros((m, 1))
+        b = (self.C + self.beta) / (m * self.beta + np.ones((1, m)).dot(self.C))
         max_ind = np.argmax(x)
         self.C[max_ind] += 1
 
         return b.ravel()
-

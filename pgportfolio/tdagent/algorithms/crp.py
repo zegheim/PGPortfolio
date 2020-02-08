@@ -24,4 +24,3 @@ class CRP(TDAgent):
         if self.b is None:
             self.b = np.ones(len(x)) / len(x)
         return self.b
-
