@@ -20,7 +20,7 @@
     "window_size":50,
     "coin_number":8,
     "global_period":86400,
-    "feature_number":3,
+    "feature_number":1,
     "test_portion":0.07,
     "online":false,
     "start_date":"2006/12/11",
