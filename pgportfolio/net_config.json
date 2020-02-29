@@ -22,7 +22,7 @@
     "global_period":1800,
     "feature_number":1,
     "test_portion":0.07,
-    "online":false,
+    "online":true,
     "start_date":"2014/07/01",
     "end_date":"2016/06/27",
     "volume_average_days":30
