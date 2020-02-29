@@ -197,7 +197,7 @@ class HistoryManager:
         elif period == DAY:
             return
         else:
-            raise ValueError("peroid has to be 5min, 15min, 30min, 2hr, 4hr, or a day")
+            raise ValueError("period has to be 5min, 15min, 30min, 2hr, 4hr, or a day")
 
     # add new history data into the database
     def update_data(self, start, end, coin):
