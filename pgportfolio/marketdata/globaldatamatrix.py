@@ -87,13 +87,10 @@ class HistoryManager:
                 for feature in features:
                     # NOTE: transform the start date to end date
                     if feature == "close":
-                        sql = (
-                            "SELECT date+{storage_period} AS date_norm, close FROM History WHERE"
-                            " date>={start} and date<={end}"
-                            ' and date%{period}=0 and coin="{coin}"'.format(
-                                start=start-self.__storage_period, end=end-self.__storage_period, period=period, coin=coin, storage_period=self.__storage_period
-                            )
-                        )
+                        sql = ("SELECT date+{storage_period} AS date_norm, close FROM History WHERE"
+                               " date_norm>={start} and date_norm<={end}" 
+                               " and date_norm%{period}=0 and coin=\"{coin}\"".format(
+                               start=start, end=end, period=period, coin=coin, storage_period=self.__storage_period))
                     elif feature == "open":
                         sql = (
                             "SELECT date+{period} AS date_norm, open FROM History WHERE"
