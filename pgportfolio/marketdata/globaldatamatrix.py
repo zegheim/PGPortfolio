@@ -19,7 +19,7 @@ class HistoryManager:
         self, coin_number, end, volume_average_days=1, volume_forward=0, online=True
     ):
         self.initialize_db()
-        self.__storage_period = DAY  # keep this as 300. no i wont
+        self.__storage_period = FIVE_MINUTES  # keep this as 300. no i wont
         self._coin_number = coin_number
         self._online = online
         if self._online:
