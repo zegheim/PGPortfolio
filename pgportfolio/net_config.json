@@ -21,7 +21,7 @@
         }
     ],
     "training": {
-        "steps": 400000,
+        "steps": 5,
         "learning_rate": 3e-5,
         "batch_size": 50,
         "buffer_biased": 5e-5,
@@ -37,8 +37,8 @@
         "feature_number": 1,
         "test_portion": 0.09,
         "online": false,
-        "start_date": "2006/12/11",
-        "end_date": "2018/01/01",
+        "start_date": "2005/12/01",
+        "end_date": "2017/01/01",
         "volume_average_days": 30
     },
     "trading": {

@@ -31,7 +31,7 @@ result_pattern = "the final portfolio value is "
 # maximize or minimize
 objective = "maximize"
 
-num_evals = 1000
+num_evals = 1
 num_workers = min(100, num_evals)
 
 # BACKEND parameters. We will use SLURMBackend to run on DB Cluster
