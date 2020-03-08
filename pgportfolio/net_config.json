@@ -32,7 +32,7 @@
     },
     "input": {
         "window_size": 50,
-        "coin_number": 8,
+        "coin_number": 4,
         "global_period": 86400,
         "feature_number": 1,
         "test_portion": 0.09,
