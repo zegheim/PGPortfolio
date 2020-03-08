@@ -5,7 +5,7 @@
 #SBATCH --gres=gpu:1 # GPUs requested
 #SBATCH --cpus-per-task=1 # CPUs requested
 #SBATCH --mem=12000  # memory in Mb
-#SBATCH --time=0-01:00:00
+#SBATCH --time=0-02:00:00
 
 export CUDA_HOME=/opt/cuda-10.0.130
 

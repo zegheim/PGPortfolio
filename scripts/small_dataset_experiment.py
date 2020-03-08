@@ -43,10 +43,8 @@ backend_params = {
         "username": "s1545572",  # CHANGE THIS
         "key_path": None,  # CHANGE THIS
         "entrypoint": "mlp",  # CHANGE THIS
-    },
+    }
 }
 
 search_algorithm = RandomSearch
-search_algorithm_params = {
-    "num_evals": num_evals,
-}
+search_algorithm_params = {"num_evals": num_evals}
