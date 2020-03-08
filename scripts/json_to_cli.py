@@ -9,7 +9,7 @@ ARGUMENTS = [
     "weight_decay_dense",
     "weight_decay_output",
 ]
-CONFIG_FILE_DIR = "../pgportfolio/net_config.json"
+CONFIG_FILE_DIR = "pgportfolio/net_config.json"
 
 
 def parse_args():
