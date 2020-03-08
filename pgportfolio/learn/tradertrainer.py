@@ -233,9 +233,8 @@ class TraderTrainer:
             "test", self._agent.portfolio_value, self._agent.log_mean
         )
         logging.warning(
-            "the portfolio value train No.%s is %s log_mean is %s,"
-            " the training time is %d seconds"
-            % (index, pv, log_mean, time.time() - starttime)
+            "the final portfolio value is %s log_mean is %s,"
+            " the training time is %d seconds" % (pv, log_mean, time.time() - starttime)
         )
 
         return self.__log_result_csv(index, time.time() - starttime)
