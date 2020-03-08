@@ -12,26 +12,26 @@
             "filter_number": 10,
             "type": "EIIE_Dense",
             "regularizer": "L2",
-            "weight_decay": 5e-09
+            "weight_decay": 5e-9
         },
         {
             "type": "EIIE_Output_WithW",
             "regularizer": "L2",
-            "weight_decay": 5e-08
+            "weight_decay": 5e-8
         }
     ],
     "training": {
-        "steps": 80000,
-        "learning_rate": 3e-05,
+        "steps": 400000,
+        "learning_rate": 3e-5,
         "batch_size": 50,
-        "buffer_biased": 5e-05,
+        "buffer_biased": 5e-5,
         "snap_shot": false,
         "fast_train": true,
         "training_method": "Adam",
         "loss_function": "loss_function6"
     },
     "input": {
-        "window_size": 50,
+        "window_size": 30,
         "coin_number": 4,
         "global_period": 86400,
         "feature_number": 1,
@@ -44,7 +44,7 @@
     "trading": {
         "trading_consumption": 0,
         "rolling_training_steps": 30,
-        "learning_rate": 3e-05,
-        "buffer_biased": 5e-05
+        "learning_rate": 3e-5,
+        "buffer_biased": 5e-5
     }
 }
