@@ -48,14 +48,14 @@ echo \"Finished copying data, starting training\"
 
 source /home/\${STUDENT_ID}/miniconda3/bin/activate pgp
 
-cd \${DATASET_DIR}
+cd \${DATASET_DIR}/PGPortfolio
 
 # Start experiment
 
 python -m scripts.json_to_cli "$@"
 
-python -m pgportfolio.main --mode=generate --repeat=1
-python -m pgportfolio.main --mode=train --processes=1 --device=gpu
+python -m main --mode=generate --repeat=1
+python -m main --mode=train --processes=1 --device=gpu
 
 echo \"Copying results to main node\"
 rsync -uap --progress train_package/ \${OUTPUT_DIR}
