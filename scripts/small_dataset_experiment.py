@@ -7,7 +7,7 @@ import pathlib
 # path has to be absolute or relative to tune.py script
 # this should be on a driver machine
 script_to_run = os.path.join(
-    pathlib.Path(__file__).parent.absolute(), "embeddings_experiment_run.sh"
+    pathlib.Path(__file__).parent.absolute(), "experiment_run.sh"
 )
 
 # specify the tunable parameters as cmd arguments and their possible ranges
