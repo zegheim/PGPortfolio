@@ -28,21 +28,18 @@ mkdir -p /disk/scratch/\${STUDENT_ID}
 
 export TMP=/disk/scratch/\${STUDENT_ID}
 
-mkdir -p \${TMP}/datasets
-export DATASET_DIR=\${TMP}/datasets
-
 export JOB_ID=\${SLURM_JOB_NAME%???}
 
-export TEMP_OUTPUT_DIR=\${TMP}/\${JOB_ID}
-mkdir -p \${TEMP_OUTPUT_DIR}
+mkdir -p \${TMP}/datasets
+export DATASET_DIR=\${TMP}/datasets/\${JOB_ID}
 
-export OUTPUT_DIR=/home/\${STUDENT_ID}/PGPortfolio/HyperparameterTuning/\${JOB_ID}
+export OUTPUT_DIR=/home/\${STUDENT_ID}/Experiments/HyperparameterTuning/\${JOB_ID}
 mkdir -p \${OUTPUT_DIR}
 
 date
 echo \"Copying data..\"
 
-rsync -uap --progress /home/\${STUDENT_ID}/\${DATASET_DIR}
+rsync -uap --progress /home/\${STUDENT_ID}/PGPortfolio \${DATASET_DIR}
 
 date
 echo \"Finished copying data, starting training\"
@@ -55,13 +52,13 @@ cd \${DATASET_DIR}
 
 # Start experiment
 
-python -m scripts.json_to_cli \
-"$@"
+python -m scripts.json_to_cli "$@"
 
-python
+python -m pgportfolio.main --mode=generate --repeat=1
+python -m pgportfolio.main --mode=train --processes=1 --device=gpu
 
 echo \"Copying results to main node\"
-rsync -uap --progress \${TEMP_OUTPUT_DIR}/ \${OUTPUT_DIR}
+rsync -uap --progress train_package/ \${OUTPUT_DIR}
 
 date
 echo \"Finished\"
