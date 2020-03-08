@@ -21,7 +21,7 @@
         }
     ],
     "training": {
-        "steps": 5,
+        "steps": 400000,
         "learning_rate": 3e-5,
         "batch_size": 50,
         "buffer_biased": 5e-5,
