@@ -39,7 +39,7 @@ backend = SLURMBackend
 backend_params = {
     "workers_config": {
         "num_workers": num_workers,  # NUMBER OF SLURM *NODES* to run at a time.
-        "partition": "Teach-Short",  # PARTITION
+        "partition": "Teach-Standard",  # PARTITION
         "username": "s1545572",  # CHANGE THIS
         "key_path": None,  # CHANGE THIS
         "entrypoint": "mlp",  # CHANGE THIS
