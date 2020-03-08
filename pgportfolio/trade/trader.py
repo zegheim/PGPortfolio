@@ -110,7 +110,7 @@ class Trader:
             self.rolling_train()
         if not self.__class__.__name__ == "BackTest":
             self._last_omega = omega.copy()
-        logging.info("total returns are %3f %" % (1 - self._total_capital))
+        logging.info(f"total returns are {(self._total_capital - 1) * 100:.3f}%")
         logging.debug("=" * 30)
         trading_time = time.time() - starttime
         if trading_time < self._period:
