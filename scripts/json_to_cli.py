@@ -9,6 +9,7 @@ ARGUMENTS = [
     "weight_decay_output",
 ]
 CONFIG_FILE_DIR = "pgportfolio/net_config.json"
+STEPS_PER_BATCH_SIZE = 3000
 
 
 def parse_args():
@@ -31,7 +32,9 @@ def main():
             config["training"]["learning_rate"] = float(args.weight_decay_output)
             config["trading"]["learning_rate"] = float(args.weight_decay_output)
         if args.batch_size:
-            config["training"]["batch_size"] = int(args.batch_size)
+            batch_size = int(args.batch_size)
+            config["training"]["batch_size"] = batch_size
+            config["training"]["steps"] = batch_size * STEPS_PER_BATCH_SIZE
         if args.window_size:
             config["input"]["window_size"] = int(args.batch_size)
 
