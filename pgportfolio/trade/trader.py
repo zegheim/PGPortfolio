@@ -110,7 +110,7 @@ class Trader:
             self.rolling_train()
         if not self.__class__.__name__ == "BackTest":
             self._last_omega = omega.copy()
-        logging.info("total assets are %3f BTC" % self._total_capital)
+        logging.info("total returns are %3f %" % (1 - self._total_capital))
         logging.debug("=" * 30)
         trading_time = time.time() - starttime
         if trading_time < self._period:
