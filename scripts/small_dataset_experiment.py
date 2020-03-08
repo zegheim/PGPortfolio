@@ -14,7 +14,7 @@ script_to_run = os.path.join(
 params_to_tune = {
     "--window_size": {"type": "values", "values": [1, 5, 10, 20, 30, 50]},
     "--learning_rate": {"type": "values", "values": [1e-8, 1e-7, 1e-6, 1e-5, 1e-4]},
-    "--batch_size": {"type": "values", "values": [2, 10, 20, 50, 100]},
+    "--batch_size": {"type": "values", "values": [3, 10, 20, 50, 100]},
     "--weight_decay_dense": {
         "type": "values",
         "values": [0, 5e-10, 5e-9, 5e-8, 5e-7, 5e-6],
