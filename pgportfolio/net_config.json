@@ -22,7 +22,7 @@
   ],
   "training": {
     "steps": 60000,
-    "learning_rate": 5e-5,
+    "learning_rate": 5e-4,
     "batch_size": 20,
     "buffer_biased": 5e-5,
     "snap_shot": false,
@@ -35,7 +35,7 @@
     "coin_number": 4,
     "global_period": 86400,
     "feature_number": 1,
-    "test_portion": 0.09,
+    "test_portion": 0.09039268955,
     "online": false,
     "start_date": "2005/12/01",
     "end_date": "2017/01/01",
