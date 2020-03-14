@@ -40,7 +40,7 @@ backend_params = {
         "partition": "Teach-Standard",  # PARTITION
         "username": "s1545572",  # CHANGE THIS
         "key_path": None,  # CHANGE THIS
-        "entrypoint": "mlp",  # CHANGE THIS
+        "entrypoint": "mlp1",  # CHANGE THIS
     }
 }
 
