@@ -1,7 +1,10 @@
 {
   "layers": [
     {
-      "filter_shape": [1, 2],
+      "filter_shape": [
+        1,
+        2
+      ],
       "filter_number": 3,
       "type": "ConvLayer"
     },

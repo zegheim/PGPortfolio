@@ -4,6 +4,9 @@ import tensorflow as tf
 import numpy as np
 from pgportfolio.constants import *
 import pgportfolio.learn.network as network
+import logging
+
+from iteround import saferound
 
 
 class NNAgent:
@@ -17,12 +20,13 @@ class NNAgent:
             config["layers"],
             device=device,
         )
-        self.__global_step = tf.Variable(0, trainable=False)
+        self.__global_step = tf.Variable(0, trainable=False, name="global_step")
         self.__train_operation = None
         self.__y = tf.placeholder(
-            tf.float32,
-            shape=[None, self.__config["input"]["feature_number"], self.__coin_number],
-        )
+                tf.float32,
+                shape=[None, self.__config["input"]["feature_number"], self.__coin_number],
+                name="y"
+            )
         self.__future_price = tf.concat(
             [tf.ones([self.__net.input_num, 1]), self.__y[:, 0, :]], 1
         )
@@ -55,8 +59,10 @@ class NNAgent:
             decay_rate=self.__config["training"]["decay_rate"],
             training_method=self.__config["training"]["training_method"],
         )
+
         self.__saver = tf.train.Saver()
         if restore_dir:
+            logging.info("Restoring pre-trained model from %s" % restore_dir)
             self.__saver.restore(self.__net.session, restore_dir)
         else:
             self.__net.session.run(tf.global_variables_initializer())
@@ -220,7 +226,12 @@ class NNAgent:
                 self.__net.input_num: x.shape[0],
             },
         )
-        setw(results[-1][:, 1:])
+        # setw(results[-1][:, 1:])
+        # Force individual weights to be at least 0.01 while still ensuring the weights sum up to 1
+        rounded_weights = np.apply_along_axis(
+            saferound, 1, results[-1].astype(float), 2
+        ).astype(np.float32)
+        setw(rounded_weights[:, 1:])
         return results[:-1]
 
     # save the variables path including file name
@@ -260,8 +271,8 @@ class NNAgent:
         assert not np.any(np.isnan(history))
         tflearn.is_training(False, self.session)
         history = history[np.newaxis, :, :, :]
-        return np.squeeze(
-            self.session.run(
+        result = np.squeeze(
+                self.session.run(
                 self.__net.output,
                 feed_dict={
                     self.__net.input_tensor: history,
@@ -270,3 +281,5 @@ class NNAgent:
                 },
             )
         )
+        # Force each individual weights to be at least 0.01, while ensuring they all sum to 1.
+        return np.apply_along_axis(saferound, 0, np.squeeze(result).astype(float), 2).astype(np.float32)

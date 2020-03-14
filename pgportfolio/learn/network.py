@@ -8,18 +8,18 @@ import tflearn
 
 
 class NeuralNetWork:
-    def __init__(self, feature_number, rows, columns, layers, device):
+    def __init__(self, feature_number, rows, columns, layers, device, restore_dir=None):
         tf_config = tf.ConfigProto()
         self.session = tf.Session(config=tf_config)
         if device == "cpu":
             tf_config.gpu_options.per_process_gpu_memory_fraction = 0
         else:
             tf_config.gpu_options.per_process_gpu_memory_fraction = 0.2
-        self.input_num = tf.placeholder(tf.int32, shape=[])
+        self.input_num = tf.placeholder(tf.int32, shape=[], name="input_num")
         self.input_tensor = tf.placeholder(
-            tf.float32, shape=[None, feature_number, rows, columns]
+            tf.float32, shape=[None, feature_number, rows, columns], name="input_tensor"
         )
-        self.previous_w = tf.placeholder(tf.float32, shape=[None, rows])
+        self.previous_w = tf.placeholder(tf.float32, shape=[None, rows], name="previous_w")
         self._rows = rows
         self._columns = columns
 
@@ -142,7 +142,7 @@ class CNN(NeuralNetWork):
                 )
                 self.add_layer_to_dict(layer["type"], network)
                 network = network[:, :, 0, 0]
-                # btc_bias = tf.zeros((self.input_num, 1))
+                # btc_bias = tf.zeros([1, 1], dtype=tf.float32, name="btc_bias")
                 btc_bias = tf.get_variable(
                     "btc_bias",
                     [1, 1],
@@ -192,3 +192,4 @@ class CNN(NeuralNetWork):
 
 def allint(l):
     return [int(i) for i in l]
+

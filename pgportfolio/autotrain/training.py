@@ -11,7 +11,7 @@ from pgportfolio.tools.configprocess import load_config
 
 
 def train_one(
-    save_path, config, log_file_dir, index, logfile_level, console_level, device
+    save_path, config, log_file_dir, index, logfile_level, console_level, device, restore_dir
 ):
     """
     train an agent
@@ -34,12 +34,12 @@ def train_one(
         console.setLevel(console_level)
         logging.getLogger().addHandler(console)
     print("training at %s started" % index)
-    return TraderTrainer(config, save_path=save_path, device=device).train_net(
+    return TraderTrainer(config, restore_dir=restore_dir, save_path=save_path, device=device).train_net(
         log_file_dir=log_file_dir, index=index
     )
 
 
-def train_all(processes=1, device="cpu"):
+def train_all(restore_dir=None, processes=1, device="cpu"):
     """
     train all the agents in the train_package folders
 
@@ -80,6 +80,7 @@ def train_all(processes=1, device="cpu"):
                     logfile_level,
                     console_level,
                     device,
+                    restore_dir
                 ),
             )
             p.start()

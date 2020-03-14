@@ -59,6 +59,12 @@ def build_parser():
         type=int,
         help="folder(int) to load the config, neglect this option if loading from ./pgportfolio/net_config",
     )
+    parser.add_argument(
+        "--restore_dir",
+        dest="restore_dir",
+        help="directory to restore model from",
+        default=None,
+    )
     return parser
 
 
@@ -75,7 +81,7 @@ def main():
 
         if not options.algo:
             pgportfolio.autotrain.training.train_all(
-                int(options.processes), options.device
+                options.restore_dir, int(options.processes), options.device
             )
         else:
             for folder in options.folder:
