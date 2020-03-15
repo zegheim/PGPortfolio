@@ -1,0 +1,2827 @@
+INFO:root:select coins offline from 2015-12-02 00:00 to 2016-01-01 00:00
+DEBUG:root:Selected coins are: ['N225', 'STOXX50E', 'S&P500', 'FTSE100']
+INFO:root:feature type list is ['close']
+DEBUG:root:buffer_bias is 0.000050
+INFO:root:the number of training examples is 10572, of test examples is 346
+DEBUG:root:the training set is from 0 to 10571
+DEBUG:root:the test set is from 10593 to 10959
+INFO:root:upper bound in test is 9.625882896958263
+INFO:tensorflow:Summary name Conv2D/W:0 is illegal; using Conv2D/W_0 instead.
+INFO:tensorflow:Summary name Conv2D/b:0 is illegal; using Conv2D/b_0 instead.
+INFO:tensorflow:Summary name Conv2D_1/W:0 is illegal; using Conv2D_1/W_0 instead.
+INFO:tensorflow:Summary name Conv2D_1/b:0 is illegal; using Conv2D_1/b_0 instead.
+INFO:tensorflow:Summary name Conv2D_2/W:0 is illegal; using Conv2D_2/W_0 instead.
+INFO:tensorflow:Summary name Conv2D_2/b:0 is illegal; using Conv2D_2/b_0 instead.
+INFO:tensorflow:Summary name btc_bias:0 is illegal; using btc_bias_0 instead.
+INFO:tensorflow:Summary name gradients_1/Conv2D/Conv2D_grad/Conv2DBackpropFilter:0/gradient is illegal; using gradients_1/Conv2D/Conv2D_grad/Conv2DBackpropFilter_0/gradient instead.
+INFO:tensorflow:Summary name gradients_1/Conv2D/BiasAdd_grad/BiasAddGrad:0/gradient is illegal; using gradients_1/Conv2D/BiasAdd_grad/BiasAddGrad_0/gradient instead.
+INFO:tensorflow:Summary name gradients_1/AddN_2:0/gradient is illegal; using gradients_1/AddN_2_0/gradient instead.
+INFO:tensorflow:Summary name gradients_1/Conv2D_1/BiasAdd_grad/BiasAddGrad:0/gradient is illegal; using gradients_1/Conv2D_1/BiasAdd_grad/BiasAddGrad_0/gradient instead.
+INFO:tensorflow:Summary name gradients_1/AddN_1:0/gradient is illegal; using gradients_1/AddN_1_0/gradient instead.
+INFO:tensorflow:Summary name gradients_1/Conv2D_2/BiasAdd_grad/BiasAddGrad:0/gradient is illegal; using gradients_1/Conv2D_2/BiasAdd_grad/BiasAddGrad_0/gradient instead.
+INFO:tensorflow:Summary name gradients_1/Tile_grad/Sum:0/gradient is illegal; using gradients_1/Tile_grad/Sum_0/gradient instead.
+INFO:root:average time for data accessing is 2.8324127197265624e-07
+INFO:root:average time for training is 3.6737918853759766e-05
+INFO:root:==============================
+INFO:root:step 0
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.1381854
+log_mean is 0.00037409257
+loss_value is -0.000374
+log mean without commission fee is 0.000374
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018819737434387206
+INFO:root:average time for training is 0.0022975587844848632
+INFO:root:==============================
+INFO:root:step 1000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.1436594
+log_mean is 0.00038795668
+loss_value is -0.000388
+log mean without commission fee is 0.000388
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018716740608215333
+INFO:root:average time for training is 0.002301772832870483
+INFO:root:==============================
+INFO:root:step 2000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.150442
+log_mean is 0.00040504796
+loss_value is -0.000405
+log mean without commission fee is 0.000405
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001867363452911377
+INFO:root:average time for training is 0.0023070409297943116
+INFO:root:==============================
+INFO:root:step 3000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.1564046
+log_mean is 0.00041998934
+loss_value is -0.000420
+log mean without commission fee is 0.000420
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018633246421813964
+INFO:root:average time for training is 0.0022803850173950197
+INFO:root:==============================
+INFO:root:step 4000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.1658959
+log_mean is 0.00044361522
+loss_value is -0.000444
+log mean without commission fee is 0.000444
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018736743927001953
+INFO:root:average time for training is 0.0022910749912261963
+INFO:root:==============================
+INFO:root:step 5000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.1742692
+log_mean is 0.00046429792
+loss_value is -0.000464
+log mean without commission fee is 0.000464
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018623065948486327
+INFO:root:average time for training is 0.002246572017669678
+INFO:root:==============================
+INFO:root:step 6000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.186019
+log_mean is 0.00049307337
+loss_value is -0.000493
+log mean without commission fee is 0.000493
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001864655017852783
+INFO:root:average time for training is 0.0022639603614807127
+INFO:root:==============================
+INFO:root:step 7000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.201084
+log_mean is 0.0005295529
+loss_value is -0.000530
+log mean without commission fee is 0.000530
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018615984916687013
+INFO:root:average time for training is 0.0022422912120819093
+INFO:root:==============================
+INFO:root:step 8000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.2291996
+log_mean is 0.00059642654
+loss_value is -0.000596
+log mean without commission fee is 0.000596
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001865987777709961
+INFO:root:average time for training is 0.00224227499961853
+INFO:root:==============================
+INFO:root:step 9000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.2731447
+log_mean is 0.00069794833
+loss_value is -0.000698
+log mean without commission fee is 0.000698
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00019452714920043944
+INFO:root:average time for training is 0.002343684434890747
+INFO:root:==============================
+INFO:root:step 10000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.3359185
+log_mean is 0.00083705207
+loss_value is -0.000837
+log mean without commission fee is 0.000837
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018641996383666993
+INFO:root:average time for training is 0.0022538392543792725
+INFO:root:==============================
+INFO:root:step 11000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.3988893
+log_mean is 0.00097017136
+loss_value is -0.000970
+log mean without commission fee is 0.000970
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00019017577171325683
+INFO:root:average time for training is 0.0023151264190673826
+INFO:root:==============================
+INFO:root:step 12000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.4596887
+log_mean is 0.0010931318
+loss_value is -0.001093
+log mean without commission fee is 0.001093
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018643522262573242
+INFO:root:average time for training is 0.0022606456279754637
+INFO:root:==============================
+INFO:root:step 13000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.5155925
+log_mean is 0.001201754
+loss_value is -0.001202
+log mean without commission fee is 0.001202
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018617105484008788
+INFO:root:average time for training is 0.002257313966751099
+INFO:root:==============================
+INFO:root:step 14000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.560661
+log_mean is 0.0012864459
+loss_value is -0.001286
+log mean without commission fee is 0.001286
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018678188323974608
+INFO:root:average time for training is 0.0022559823989868164
+INFO:root:==============================
+INFO:root:step 15000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.599167
+log_mean is 0.00135689
+loss_value is -0.001357
+log mean without commission fee is 0.001357
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00029438042640686035
+INFO:root:average time for training is 0.0034917986392974856
+INFO:root:==============================
+INFO:root:step 16000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.6340789
+log_mean is 0.0014193064
+loss_value is -0.001419
+log mean without commission fee is 0.001419
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001861295700073242
+INFO:root:average time for training is 0.00225039005279541
+INFO:root:==============================
+INFO:root:step 17000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.6623905
+log_mean is 0.001468951
+loss_value is -0.001469
+log mean without commission fee is 0.001469
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018598651885986327
+INFO:root:average time for training is 0.002262279510498047
+INFO:root:==============================
+INFO:root:step 18000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.6894811
+log_mean is 0.0015156682
+loss_value is -0.001516
+log mean without commission fee is 0.001516
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018458724021911622
+INFO:root:average time for training is 0.0023163678646087645
+INFO:root:==============================
+INFO:root:step 19000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.7103034
+log_mean is 0.001551072
+loss_value is -0.001551
+log mean without commission fee is 0.001551
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018633532524108887
+INFO:root:average time for training is 0.002312923192977905
+INFO:root:==============================
+INFO:root:step 20000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.7283366
+log_mean is 0.0015813896
+loss_value is -0.001581
+log mean without commission fee is 0.001581
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018737149238586426
+INFO:root:average time for training is 0.0022854437828063964
+INFO:root:==============================
+INFO:root:step 21000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.7471904
+log_mean is 0.0016127449
+loss_value is -0.001613
+log mean without commission fee is 0.001613
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018488550186157227
+INFO:root:average time for training is 0.0022978739738464355
+INFO:root:==============================
+INFO:root:step 22000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.7626855
+log_mean is 0.0016382633
+loss_value is -0.001638
+log mean without commission fee is 0.001638
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0002256171703338623
+INFO:root:average time for training is 0.0027192435264587404
+INFO:root:==============================
+INFO:root:step 23000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.7746012
+log_mean is 0.0016577354
+loss_value is -0.001658
+log mean without commission fee is 0.001658
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018686366081237794
+INFO:root:average time for training is 0.002250403642654419
+INFO:root:==============================
+INFO:root:step 24000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.7867628
+log_mean is 0.0016774737
+loss_value is -0.001677
+log mean without commission fee is 0.001677
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018565988540649415
+INFO:root:average time for training is 0.002249837636947632
+INFO:root:==============================
+INFO:root:step 25000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.7951618
+log_mean is 0.0016910286
+loss_value is -0.001691
+log mean without commission fee is 0.001691
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018701744079589844
+INFO:root:average time for training is 0.0022471442222595215
+INFO:root:==============================
+INFO:root:step 26000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8058479
+log_mean is 0.0017081844
+loss_value is -0.001708
+log mean without commission fee is 0.001708
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018610739707946778
+INFO:root:average time for training is 0.0022554278373718263
+INFO:root:==============================
+INFO:root:step 27000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8129456
+log_mean is 0.0017195186
+loss_value is -0.001719
+log mean without commission fee is 0.001720
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001856575012207031
+INFO:root:average time for training is 0.0022488713264465334
+INFO:root:==============================
+INFO:root:step 28000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8209578
+log_mean is 0.0017322632
+loss_value is -0.001732
+log mean without commission fee is 0.001732
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018752408027648926
+INFO:root:average time for training is 0.002237375497817993
+INFO:root:==============================
+INFO:root:step 29000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8273361
+log_mean is 0.0017423709
+loss_value is -0.001742
+log mean without commission fee is 0.001742
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001865699291229248
+INFO:root:average time for training is 0.0022392289638519286
+INFO:root:==============================
+INFO:root:step 30000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8336844
+log_mean is 0.001752393
+loss_value is -0.001752
+log mean without commission fee is 0.001752
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018584370613098145
+INFO:root:average time for training is 0.002239077091217041
+INFO:root:==============================
+INFO:root:step 31000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8400218
+log_mean is 0.0017623657
+loss_value is -0.001762
+log mean without commission fee is 0.001762
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018498945236206056
+INFO:root:average time for training is 0.0022490222454071046
+INFO:root:==============================
+INFO:root:step 32000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8448966
+log_mean is 0.0017700116
+loss_value is -0.001770
+log mean without commission fee is 0.001770
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001844332218170166
+INFO:root:average time for training is 0.002254469394683838
+INFO:root:==============================
+INFO:root:step 33000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8501186
+log_mean is 0.0017781821
+loss_value is -0.001778
+log mean without commission fee is 0.001778
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001842200756072998
+INFO:root:average time for training is 0.002275505781173706
+INFO:root:==============================
+INFO:root:step 34000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8546447
+log_mean is 0.0017852443
+loss_value is -0.001785
+log mean without commission fee is 0.001785
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018599462509155275
+INFO:root:average time for training is 0.002240854740142822
+INFO:root:==============================
+INFO:root:step 35000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8587946
+log_mean is 0.0017917026
+loss_value is -0.001792
+log mean without commission fee is 0.001792
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018392753601074218
+INFO:root:average time for training is 0.0022530550956726073
+INFO:root:==============================
+INFO:root:step 36000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.863027
+log_mean is 0.001798279
+loss_value is -0.001798
+log mean without commission fee is 0.001798
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001993718147277832
+INFO:root:average time for training is 0.0023959207534790038
+INFO:root:==============================
+INFO:root:step 37000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8677989
+log_mean is 0.0018056714
+loss_value is -0.001806
+log mean without commission fee is 0.001806
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001839108467102051
+INFO:root:average time for training is 0.002250105619430542
+INFO:root:==============================
+INFO:root:step 38000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8703681
+log_mean is 0.0018096404
+loss_value is -0.001810
+log mean without commission fee is 0.001810
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001859126091003418
+INFO:root:average time for training is 0.0022478854656219484
+INFO:root:==============================
+INFO:root:step 39000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8725839
+log_mean is 0.0018130637
+loss_value is -0.001813
+log mean without commission fee is 0.001813
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018670487403869628
+INFO:root:average time for training is 0.0022365074157714845
+INFO:root:==============================
+INFO:root:step 40000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8760542
+log_mean is 0.001818415
+loss_value is -0.001818
+log mean without commission fee is 0.001818
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001847515106201172
+INFO:root:average time for training is 0.002269122123718262
+INFO:root:==============================
+INFO:root:step 41000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8784382
+log_mean is 0.001822086
+loss_value is -0.001822
+log mean without commission fee is 0.001822
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018564629554748536
+INFO:root:average time for training is 0.0022480862140655516
+INFO:root:==============================
+INFO:root:step 42000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8808144
+log_mean is 0.0018257409
+loss_value is -0.001826
+log mean without commission fee is 0.001826
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018626642227172852
+INFO:root:average time for training is 0.002240466594696045
+INFO:root:==============================
+INFO:root:step 43000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8844507
+log_mean is 0.001831321
+loss_value is -0.001831
+log mean without commission fee is 0.001831
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001873154640197754
+INFO:root:average time for training is 0.0022387373447418212
+INFO:root:==============================
+INFO:root:step 44000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8875748
+log_mean is 0.0018361068
+loss_value is -0.001836
+log mean without commission fee is 0.001836
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018414211273193358
+INFO:root:average time for training is 0.002282991886138916
+INFO:root:==============================
+INFO:root:step 45000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8893602
+log_mean is 0.0018388402
+loss_value is -0.001839
+log mean without commission fee is 0.001839
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0002611386775970459
+INFO:root:average time for training is 0.0031309080123901366
+INFO:root:==============================
+INFO:root:step 46000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8912839
+log_mean is 0.0018417854
+loss_value is -0.001842
+log mean without commission fee is 0.001842
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.000186143159866333
+INFO:root:average time for training is 0.0022462692260742188
+INFO:root:==============================
+INFO:root:step 47000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8932531
+log_mean is 0.0018447922
+loss_value is -0.001845
+log mean without commission fee is 0.001845
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018529915809631348
+INFO:root:average time for training is 0.002255345344543457
+INFO:root:==============================
+INFO:root:step 48000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8939546
+log_mean is 0.0018458614
+loss_value is -0.001846
+log mean without commission fee is 0.001846
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001861581802368164
+INFO:root:average time for training is 0.0022556378841400147
+INFO:root:==============================
+INFO:root:step 49000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8951797
+log_mean is 0.0018477315
+loss_value is -0.001848
+log mean without commission fee is 0.001848
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001901707649230957
+INFO:root:average time for training is 0.0023537187576293944
+INFO:root:==============================
+INFO:root:step 50000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8966973
+log_mean is 0.0018500446
+loss_value is -0.001850
+log mean without commission fee is 0.001850
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001853957176208496
+INFO:root:average time for training is 0.0022396588325500487
+INFO:root:==============================
+INFO:root:step 51000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8962859
+log_mean is 0.0018494172
+loss_value is -0.001849
+log mean without commission fee is 0.001849
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018512725830078125
+INFO:root:average time for training is 0.002261191129684448
+INFO:root:==============================
+INFO:root:step 52000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8973478
+log_mean is 0.0018510341
+loss_value is -0.001851
+log mean without commission fee is 0.001851
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018573880195617675
+INFO:root:average time for training is 0.00223296856880188
+INFO:root:==============================
+INFO:root:step 53000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8987657
+log_mean is 0.0018531949
+loss_value is -0.001853
+log mean without commission fee is 0.001853
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018602490425109863
+INFO:root:average time for training is 0.0023061320781707765
+INFO:root:==============================
+INFO:root:step 54000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8991885
+log_mean is 0.0018538374
+loss_value is -0.001854
+log mean without commission fee is 0.001854
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018764209747314454
+INFO:root:average time for training is 0.0022788844108581545
+INFO:root:==============================
+INFO:root:step 55000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.9001676
+log_mean is 0.0018553241
+loss_value is -0.001855
+log mean without commission fee is 0.001855
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018584656715393065
+INFO:root:average time for training is 0.002293034076690674
+INFO:root:==============================
+INFO:root:step 56000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8984541
+log_mean is 0.0018527175
+loss_value is -0.001853
+log mean without commission fee is 0.001853
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00027449750900268555
+INFO:root:average time for training is 0.0032877790927886962
+INFO:root:==============================
+INFO:root:step 57000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8937047
+log_mean is 0.0018454801
+loss_value is -0.001845
+log mean without commission fee is 0.001845
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.00018675971031188965
+INFO:root:average time for training is 0.002269204378128052
+INFO:root:==============================
+INFO:root:step 58000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8913502
+log_mean is 0.0018418826
+loss_value is -0.001842
+log mean without commission fee is 0.001842
+
+INFO:root:==============================
+
+INFO:root:average time for data accessing is 0.0001876838207244873
+INFO:root:average time for training is 0.002288172245025635
+INFO:root:==============================
+INFO:root:step 59000
+INFO:root:------------------------------
+INFO:root:the portfolio value on test set is 1.8890201
+log_mean is 0.0018383225
+loss_value is -0.001838
+log mean without commission fee is 0.001838
+
+INFO:root:==============================
+
+INFO:root:Restoring pre-trained model from ./train_package/25/netfile
+WARNING:root:the final portfolio value is 1.8890201 log_mean is 0.0018383225, the training time is 157 seconds
+INFO:root:select coins offline from 2015-12-02 00:00 to 2016-01-01 00:00
+DEBUG:root:Selected coins are: ['N225', 'STOXX50E', 'S&P500', 'FTSE100']
+INFO:root:feature type list is ['close']
+DEBUG:root:buffer_bias is 0.000050
+INFO:root:the number of training examples is 10572, of test examples is 346
+DEBUG:root:the training set is from 0 to 10571
+DEBUG:root:the test set is from 10593 to 10959
+INFO:root:the step is 0
+DEBUG:root:the raw omega is [0.   0.93 0.01 0.06 0.  ]
+DEBUG:root:the portfolio change this period is : 0.9644840740970673
+DEBUG:root:a new experience, indexed by 10572, was appended
+INFO:root:total returns are -3.552%
+DEBUG:root:==============================
+INFO:root:the step is 1
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 0.9756990075111389
+DEBUG:root:a new experience, indexed by 10573, was appended
+INFO:root:total returns are -5.895%
+DEBUG:root:==============================
+INFO:root:the step is 2
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0587660074234009
+DEBUG:root:a new experience, indexed by 10574, was appended
+INFO:root:total returns are -0.365%
+DEBUG:root:==============================
+INFO:root:the step is 3
+DEBUG:root:the raw omega is [0.   0.99 0.   0.01 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0000000093132257
+DEBUG:root:a new experience, indexed by 10575, was appended
+INFO:root:total returns are -0.365%
+DEBUG:root:==============================
+INFO:root:the step is 4
+DEBUG:root:the raw omega is [0.   0.95 0.   0.04 0.01]
+DEBUG:root:the portfolio change this period is : 0.999999986961484
+DEBUG:root:a new experience, indexed by 10576, was appended
+INFO:root:total returns are -0.365%
+DEBUG:root:==============================
+INFO:root:the step is 5
+DEBUG:root:the raw omega is [0.   0.81 0.01 0.13 0.05]
+DEBUG:root:the portfolio change this period is : 1.0049794483386454
+DEBUG:root:a new experience, indexed by 10577, was appended
+INFO:root:total returns are 0.131%
+DEBUG:root:==============================
+INFO:root:the step is 6
+DEBUG:root:the raw omega is [0. 0. 0. 1. 0.]
+DEBUG:root:the portfolio change this period is : 1.0141443014144897
+DEBUG:root:a new experience, indexed by 10578, was appended
+INFO:root:total returns are 1.547%
+DEBUG:root:==============================
+INFO:root:the step is 7
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0272321701049805
+DEBUG:root:a new experience, indexed by 10579, was appended
+INFO:root:total returns are 4.313%
+DEBUG:root:==============================
+INFO:root:the step is 8
+DEBUG:root:the raw omega is [0. 0. 0. 1. 0.]
+DEBUG:root:the portfolio change this period is : 1.0055285692214966
+DEBUG:root:a new experience, indexed by 10580, was appended
+INFO:root:total returns are 4.889%
+DEBUG:root:==============================
+INFO:root:the step is 9
+DEBUG:root:the raw omega is [0.   0.   0.99 0.01 0.  ]
+DEBUG:root:the portfolio change this period is : 1.022068401556238
+DEBUG:root:a new experience, indexed by 10581, was appended
+INFO:root:total returns are 7.204%
+DEBUG:root:==============================
+INFO:root:the step is 10
+DEBUG:root:the raw omega is [0.   0.   0.98 0.02 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0000000186264515
+DEBUG:root:a new experience, indexed by 10582, was appended
+INFO:root:total returns are 7.204%
+DEBUG:root:==============================
+INFO:root:the step is 11
+DEBUG:root:the raw omega is [0.   0.   0.97 0.03 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0000000279396772
+DEBUG:root:a new experience, indexed by 10583, was appended
+INFO:root:total returns are 7.204%
+DEBUG:root:==============================
+INFO:root:the step is 12
+DEBUG:root:the raw omega is [0.   0.   0.95 0.04 0.01]
+DEBUG:root:the portfolio change this period is : 0.9924308444769874
+DEBUG:root:a new experience, indexed by 10584, was appended
+INFO:root:total returns are 6.393%
+DEBUG:root:==============================
+INFO:root:the step is 13
+DEBUG:root:the raw omega is [0. 0. 1. 0. 0.]
+DEBUG:root:the portfolio change this period is : 0.977107048034668
+DEBUG:root:a new experience, indexed by 10585, was appended
+INFO:root:total returns are 3.957%
+DEBUG:root:==============================
+INFO:root:the step is 14
+DEBUG:root:the raw omega is [0.   0.   0.99 0.   0.01]
+DEBUG:root:the portfolio change this period is : 0.9813367893284932
+DEBUG:root:a new experience, indexed by 10586, was appended
+INFO:root:total returns are 2.017%
+DEBUG:root:==============================
+INFO:root:the step is 15
+DEBUG:root:the raw omega is [0. 0. 1. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0029932260513306
+DEBUG:root:a new experience, indexed by 10587, was appended
+INFO:root:total returns are 2.322%
+DEBUG:root:==============================
+INFO:root:the step is 16
+DEBUG:root:the raw omega is [0. 0. 1. 0. 0.]
+DEBUG:root:the portfolio change this period is : 0.9910817742347717
+DEBUG:root:a new experience, indexed by 10588, was appended
+INFO:root:total returns are 1.410%
+DEBUG:root:==============================
+INFO:root:the step is 17
+DEBUG:root:the raw omega is [0.   0.15 0.85 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0000000298023224
+DEBUG:root:a new experience, indexed by 10589, was appended
+INFO:root:total returns are 1.410%
+DEBUG:root:==============================
+INFO:root:the step is 18
+DEBUG:root:the raw omega is [0.   0.32 0.68 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10590, was appended
+INFO:root:total returns are 1.410%
+DEBUG:root:==============================
+INFO:root:the step is 19
+DEBUG:root:the raw omega is [0.   0.39 0.6  0.01 0.  ]
+DEBUG:root:the portfolio change this period is : 0.9845081115113823
+DEBUG:root:a new experience, indexed by 10591, was appended
+INFO:root:total returns are -0.161%
+DEBUG:root:==============================
+INFO:root:the step is 20
+DEBUG:root:the raw omega is [0. 0. 1. 0. 0.]
+DEBUG:root:the portfolio change this period is : 0.9825253486633301
+DEBUG:root:a new experience, indexed by 10592, was appended
+INFO:root:total returns are -1.906%
+DEBUG:root:==============================
+INFO:root:the step is 21
+DEBUG:root:the raw omega is [0.   0.59 0.41 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 0.9942268859758876
+DEBUG:root:a new experience, indexed by 10593, was appended
+INFO:root:total returns are -2.472%
+DEBUG:root:==============================
+INFO:root:the step is 22
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10594, was appended
+INFO:root:total returns are -2.472%
+DEBUG:root:==============================
+INFO:root:the step is 23
+DEBUG:root:the raw omega is [0.   0.39 0.61 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 0.998370747471327
+DEBUG:root:a new experience, indexed by 10595, was appended
+INFO:root:total returns are -2.631%
+DEBUG:root:==============================
+INFO:root:the step is 24
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10596, was appended
+INFO:root:total returns are -2.631%
+DEBUG:root:==============================
+INFO:root:the step is 25
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10597, was appended
+INFO:root:total returns are -2.631%
+DEBUG:root:==============================
+INFO:root:the step is 26
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0715574026107788
+DEBUG:root:a new experience, indexed by 10598, was appended
+INFO:root:total returns are 4.336%
+DEBUG:root:==============================
+INFO:root:the step is 27
+DEBUG:root:the raw omega is [0.   0.01 0.   0.99 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0163714062503109
+DEBUG:root:a new experience, indexed by 10599, was appended
+INFO:root:total returns are 6.044%
+DEBUG:root:==============================
+INFO:root:the step is 28
+DEBUG:root:the raw omega is [0.   0.17 0.79 0.04 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0197602137387873
+DEBUG:root:a new experience, indexed by 10600, was appended
+INFO:root:total returns are 8.140%
+DEBUG:root:==============================
+INFO:root:the step is 29
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.022760272026062
+DEBUG:root:a new experience, indexed by 10601, was appended
+INFO:root:total returns are 10.601%
+DEBUG:root:==============================
+INFO:root:the step is 30
+DEBUG:root:the raw omega is [0.   0.12 0.01 0.86 0.01]
+DEBUG:root:the portfolio change this period is : 0.9981566982374543
+DEBUG:root:a new experience, indexed by 10602, was appended
+INFO:root:total returns are 10.397%
+DEBUG:root:==============================
+INFO:root:the step is 31
+DEBUG:root:the raw omega is [0.   0.99 0.01 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0000000093132257
+DEBUG:root:a new experience, indexed by 10603, was appended
+INFO:root:total returns are 10.397%
+DEBUG:root:==============================
+INFO:root:the step is 32
+DEBUG:root:the raw omega is [0.   0.88 0.05 0.06 0.01]
+DEBUG:root:the portfolio change this period is : 0.9999999944120646
+DEBUG:root:a new experience, indexed by 10604, was appended
+INFO:root:total returns are 10.397%
+DEBUG:root:==============================
+INFO:root:the step is 33
+DEBUG:root:the raw omega is [0.   0.6  0.13 0.22 0.05]
+DEBUG:root:the portfolio change this period is : 1.0121680995373485
+DEBUG:root:a new experience, indexed by 10605, was appended
+INFO:root:total returns are 11.740%
+DEBUG:root:==============================
+INFO:root:the step is 34
+DEBUG:root:the raw omega is [0.   0.91 0.   0.07 0.02]
+DEBUG:root:the portfolio change this period is : 0.9955458698225073
+DEBUG:root:a new experience, indexed by 10606, was appended
+INFO:root:total returns are 11.243%
+DEBUG:root:==============================
+INFO:root:the step is 35
+DEBUG:root:the raw omega is [0.   0.03 0.11 0.62 0.24]
+DEBUG:root:the portfolio change this period is : 0.9961109656613577
+DEBUG:root:a new experience, indexed by 10607, was appended
+INFO:root:total returns are 10.810%
+DEBUG:root:==============================
+INFO:root:the step is 36
+DEBUG:root:the raw omega is [0.   0.   0.95 0.   0.05]
+DEBUG:root:the portfolio change this period is : 1.0205021803829246
+DEBUG:root:a new experience, indexed by 10608, was appended
+INFO:root:total returns are 13.082%
+DEBUG:root:==============================
+INFO:root:the step is 37
+DEBUG:root:the raw omega is [0.   0.03 0.95 0.   0.02]
+DEBUG:root:the portfolio change this period is : 1.0174484179923793
+DEBUG:root:a new experience, indexed by 10609, was appended
+INFO:root:total returns are 15.055%
+DEBUG:root:==============================
+INFO:root:the step is 38
+DEBUG:root:the raw omega is [0.   0.5  0.01 0.49 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0000000093132257
+DEBUG:root:a new experience, indexed by 10610, was appended
+INFO:root:total returns are 15.055%
+DEBUG:root:==============================
+INFO:root:the step is 39
+DEBUG:root:the raw omega is [0.   0.52 0.02 0.45 0.01]
+DEBUG:root:the portfolio change this period is : 0.9999999683350325
+DEBUG:root:a new experience, indexed by 10611, was appended
+INFO:root:total returns are 15.055%
+DEBUG:root:==============================
+INFO:root:the step is 40
+DEBUG:root:the raw omega is [0.   0.57 0.03 0.39 0.01]
+DEBUG:root:the portfolio change this period is : 0.9913127170850584
+DEBUG:root:a new experience, indexed by 10612, was appended
+INFO:root:total returns are 14.056%
+DEBUG:root:==============================
+INFO:root:the step is 41
+DEBUG:root:the raw omega is [0.   0.75 0.   0.25 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0087164640426636
+DEBUG:root:a new experience, indexed by 10613, was appended
+INFO:root:total returns are 15.050%
+DEBUG:root:==============================
+INFO:root:the step is 42
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0410953760147095
+DEBUG:root:a new experience, indexed by 10614, was appended
+INFO:root:total returns are 19.778%
+DEBUG:root:==============================
+INFO:root:the step is 43
+DEBUG:root:the raw omega is [0.   0.   0.   0.05 0.95]
+DEBUG:root:the portfolio change this period is : 0.9976094462325475
+DEBUG:root:a new experience, indexed by 10615, was appended
+INFO:root:total returns are 19.491%
+DEBUG:root:==============================
+INFO:root:the step is 44
+DEBUG:root:the raw omega is [0.   0.   0.   0.01 0.99]
+DEBUG:root:the portfolio change this period is : 1.0111709414742984
+DEBUG:root:a new experience, indexed by 10616, was appended
+INFO:root:total returns are 20.826%
+DEBUG:root:==============================
+INFO:root:the step is 45
+DEBUG:root:the raw omega is [0.   0.   0.01 0.44 0.55]
+DEBUG:root:the portfolio change this period is : 1.0000000093132257
+DEBUG:root:a new experience, indexed by 10617, was appended
+INFO:root:total returns are 20.826%
+DEBUG:root:==============================
+INFO:root:the step is 46
+DEBUG:root:the raw omega is [0.   0.   0.02 0.35 0.63]
+DEBUG:root:the portfolio change this period is : 0.9999999888241291
+DEBUG:root:a new experience, indexed by 10618, was appended
+INFO:root:total returns are 20.826%
+DEBUG:root:==============================
+INFO:root:the step is 47
+DEBUG:root:the raw omega is [0.   0.   0.04 0.42 0.54]
+DEBUG:root:the portfolio change this period is : 0.998674166434804
+DEBUG:root:a new experience, indexed by 10619, was appended
+INFO:root:total returns are 20.666%
+DEBUG:root:==============================
+INFO:root:the step is 48
+DEBUG:root:the raw omega is [0.   0.01 0.26 0.07 0.66]
+DEBUG:root:the portfolio change this period is : 0.9914145921575359
+DEBUG:root:a new experience, indexed by 10620, was appended
+INFO:root:total returns are 19.630%
+DEBUG:root:==============================
+INFO:root:the step is 49
+DEBUG:root:the raw omega is [0.   0.01 0.07 0.33 0.59]
+DEBUG:root:the portfolio change this period is : 1.0039248329947483
+DEBUG:root:a new experience, indexed by 10621, was appended
+INFO:root:total returns are 20.100%
+DEBUG:root:==============================
+INFO:root:the step is 50
+DEBUG:root:the raw omega is [0.   0.87 0.01 0.02 0.1 ]
+DEBUG:root:the portfolio change this period is : 1.0090551116686828
+DEBUG:root:a new experience, indexed by 10622, was appended
+INFO:root:total returns are 21.187%
+DEBUG:root:==============================
+INFO:root:the step is 51
+DEBUG:root:the raw omega is [0.   0.   0.03 0.   0.97]
+DEBUG:root:the portfolio change this period is : 1.0176052520607075
+DEBUG:root:a new experience, indexed by 10623, was appended
+INFO:root:total returns are 23.321%
+DEBUG:root:==============================
+INFO:root:the step is 52
+DEBUG:root:the raw omega is [0.   0.01 0.   0.   0.99]
+DEBUG:root:the portfolio change this period is : 1.0000000093132257
+DEBUG:root:a new experience, indexed by 10624, was appended
+INFO:root:total returns are 23.321%
+DEBUG:root:==============================
+INFO:root:the step is 53
+DEBUG:root:the raw omega is [0.   0.04 0.   0.   0.96]
+DEBUG:root:the portfolio change this period is : 0.9999999776482582
+DEBUG:root:a new experience, indexed by 10625, was appended
+INFO:root:total returns are 23.321%
+DEBUG:root:==============================
+INFO:root:the step is 54
+DEBUG:root:the raw omega is [0.   0.12 0.   0.01 0.87]
+DEBUG:root:the portfolio change this period is : 1.0070047051265552
+DEBUG:root:a new experience, indexed by 10626, was appended
+INFO:root:total returns are 24.184%
+DEBUG:root:==============================
+INFO:root:the step is 55
+DEBUG:root:the raw omega is [0.   0.   0.   0.44 0.56]
+DEBUG:root:the portfolio change this period is : 0.9960537505060039
+DEBUG:root:a new experience, indexed by 10627, was appended
+INFO:root:total returns are 23.694%
+DEBUG:root:==============================
+INFO:root:the step is 56
+DEBUG:root:the raw omega is [0.   0.01 0.03 0.09 0.87]
+DEBUG:root:the portfolio change this period is : 1.0054031882196064
+DEBUG:root:a new experience, indexed by 10628, was appended
+INFO:root:total returns are 24.363%
+DEBUG:root:==============================
+INFO:root:the step is 57
+DEBUG:root:the raw omega is [0.   0.8  0.15 0.01 0.04]
+DEBUG:root:the portfolio change this period is : 0.997509537940956
+DEBUG:root:a new experience, indexed by 10629, was appended
+INFO:root:total returns are 24.053%
+DEBUG:root:==============================
+INFO:root:the step is 58
+DEBUG:root:the raw omega is [0.  0.3 0.7 0.  0. ]
+DEBUG:root:the portfolio change this period is : 1.0000869152787928
+DEBUG:root:a new experience, indexed by 10630, was appended
+INFO:root:total returns are 24.064%
+DEBUG:root:==============================
+INFO:root:the step is 59
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10631, was appended
+INFO:root:total returns are 24.064%
+DEBUG:root:==============================
+INFO:root:the step is 60
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10632, was appended
+INFO:root:total returns are 24.064%
+DEBUG:root:==============================
+INFO:root:the step is 61
+DEBUG:root:the raw omega is [0.   0.99 0.01 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 0.999964058772533
+DEBUG:root:a new experience, indexed by 10633, was appended
+INFO:root:total returns are 24.059%
+DEBUG:root:==============================
+INFO:root:the step is 62
+DEBUG:root:the raw omega is [0.   0.89 0.1  0.   0.01]
+DEBUG:root:the portfolio change this period is : 1.0173214671981086
+DEBUG:root:a new experience, indexed by 10634, was appended
+INFO:root:total returns are 26.208%
+DEBUG:root:==============================
+INFO:root:the step is 63
+DEBUG:root:the raw omega is [0.   0.   0.92 0.01 0.07]
+DEBUG:root:the portfolio change this period is : 0.9973517751974241
+DEBUG:root:a new experience, indexed by 10635, was appended
+INFO:root:total returns are 25.874%
+DEBUG:root:==============================
+INFO:root:the step is 64
+DEBUG:root:the raw omega is [0.   0.   0.72 0.26 0.02]
+DEBUG:root:the portfolio change this period is : 0.98642365359583
+DEBUG:root:a new experience, indexed by 10636, was appended
+INFO:root:total returns are 24.165%
+DEBUG:root:==============================
+INFO:root:the step is 65
+DEBUG:root:the raw omega is [0.   0.   0.99 0.   0.01]
+DEBUG:root:the portfolio change this period is : 1.0000000093132257
+DEBUG:root:a new experience, indexed by 10637, was appended
+INFO:root:total returns are 24.165%
+DEBUG:root:==============================
+INFO:root:the step is 66
+DEBUG:root:the raw omega is [0.   0.   0.97 0.   0.03]
+DEBUG:root:the portfolio change this period is : 1.0000000279396772
+DEBUG:root:a new experience, indexed by 10638, was appended
+INFO:root:total returns are 24.165%
+DEBUG:root:==============================
+INFO:root:the step is 67
+DEBUG:root:the raw omega is [0.   0.   0.93 0.   0.07]
+DEBUG:root:the portfolio change this period is : 1.0000000074505806
+DEBUG:root:a new experience, indexed by 10639, was appended
+INFO:root:total returns are 24.165%
+DEBUG:root:==============================
+INFO:root:the step is 68
+DEBUG:root:the raw omega is [0.   0.   0.86 0.01 0.13]
+DEBUG:root:the portfolio change this period is : 1.000005461946008
+DEBUG:root:a new experience, indexed by 10640, was appended
+INFO:root:total returns are 24.166%
+DEBUG:root:==============================
+INFO:root:the step is 69
+DEBUG:root:the raw omega is [0.   0.   0.77 0.02 0.21]
+DEBUG:root:the portfolio change this period is : 1.004833021193789
+DEBUG:root:a new experience, indexed by 10641, was appended
+INFO:root:total returns are 24.766%
+DEBUG:root:==============================
+INFO:root:the step is 70
+DEBUG:root:the raw omega is [0.   0.   0.12 0.   0.88]
+DEBUG:root:the portfolio change this period is : 1.0155855150901116
+DEBUG:root:a new experience, indexed by 10642, was appended
+INFO:root:total returns are 26.710%
+DEBUG:root:==============================
+INFO:root:the step is 71
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 0.9928733110427856
+DEBUG:root:a new experience, indexed by 10643, was appended
+INFO:root:total returns are 25.807%
+DEBUG:root:==============================
+INFO:root:the step is 72
+DEBUG:root:the raw omega is [0.   0.98 0.02 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 0.9648909688757052
+DEBUG:root:a new experience, indexed by 10644, was appended
+INFO:root:total returns are 21.390%
+DEBUG:root:==============================
+INFO:root:the step is 73
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10645, was appended
+INFO:root:total returns are 21.390%
+DEBUG:root:==============================
+INFO:root:the step is 74
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10646, was appended
+INFO:root:total returns are 21.390%
+DEBUG:root:==============================
+INFO:root:the step is 75
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 0.9974703192710876
+DEBUG:root:a new experience, indexed by 10647, was appended
+INFO:root:total returns are 21.083%
+DEBUG:root:==============================
+INFO:root:the step is 76
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 0.9757834672927856
+DEBUG:root:a new experience, indexed by 10648, was appended
+INFO:root:total returns are 18.151%
+DEBUG:root:==============================
+INFO:root:the step is 77
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 0.998890221118927
+DEBUG:root:a new experience, indexed by 10649, was appended
+INFO:root:total returns are 18.020%
+DEBUG:root:==============================
+INFO:root:the step is 78
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0021940469741821
+DEBUG:root:a new experience, indexed by 10650, was appended
+INFO:root:total returns are 18.279%
+DEBUG:root:==============================
+INFO:root:the step is 79
+DEBUG:root:the raw omega is [0.   0.86 0.14 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0058841616650227
+DEBUG:root:a new experience, indexed by 10651, was appended
+INFO:root:total returns are 18.975%
+DEBUG:root:==============================
+INFO:root:the step is 80
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10652, was appended
+INFO:root:total returns are 18.975%
+DEBUG:root:==============================
+INFO:root:the step is 81
+DEBUG:root:the raw omega is [0.   0.97 0.03 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0000000279396772
+DEBUG:root:a new experience, indexed by 10653, was appended
+INFO:root:total returns are 18.975%
+DEBUG:root:==============================
+INFO:root:the step is 82
+DEBUG:root:the raw omega is [0.   0.9  0.07 0.03 0.  ]
+DEBUG:root:the portfolio change this period is : 0.996208147739259
+DEBUG:root:a new experience, indexed by 10654, was appended
+INFO:root:total returns are 18.524%
+DEBUG:root:==============================
+INFO:root:the step is 83
+DEBUG:root:the raw omega is [0.   0.94 0.   0.06 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0111821971435209
+DEBUG:root:a new experience, indexed by 10655, was appended
+INFO:root:total returns are 19.849%
+DEBUG:root:==============================
+INFO:root:the step is 84
+DEBUG:root:the raw omega is [0.   0.56 0.1  0.33 0.01]
+DEBUG:root:the portfolio change this period is : 1.0227125135271353
+DEBUG:root:a new experience, indexed by 10656, was appended
+INFO:root:total returns are 22.571%
+DEBUG:root:==============================
+INFO:root:the step is 85
+DEBUG:root:the raw omega is [0. 0. 0. 1. 0.]
+DEBUG:root:the portfolio change this period is : 1.0001729726791382
+DEBUG:root:a new experience, indexed by 10657, was appended
+INFO:root:total returns are 22.592%
+DEBUG:root:==============================
+INFO:root:the step is 86
+DEBUG:root:the raw omega is [0.   0.   0.   0.99 0.01]
+DEBUG:root:the portfolio change this period is : 0.9989919987979584
+DEBUG:root:a new experience, indexed by 10658, was appended
+INFO:root:total returns are 22.469%
+DEBUG:root:==============================
+INFO:root:the step is 87
+DEBUG:root:the raw omega is [0.   0.   0.   0.94 0.06]
+DEBUG:root:the portfolio change this period is : 0.9999999962747097
+DEBUG:root:a new experience, indexed by 10659, was appended
+INFO:root:total returns are 22.469%
+DEBUG:root:==============================
+INFO:root:the step is 88
+DEBUG:root:the raw omega is [0.   0.   0.   0.89 0.11]
+DEBUG:root:the portfolio change this period is : 0.9999999850988388
+DEBUG:root:a new experience, indexed by 10660, was appended
+INFO:root:total returns are 22.469%
+DEBUG:root:==============================
+INFO:root:the step is 89
+DEBUG:root:the raw omega is [0.   0.   0.   0.78 0.22]
+DEBUG:root:the portfolio change this period is : 1.0054407749670453
+DEBUG:root:a new experience, indexed by 10661, was appended
+INFO:root:total returns are 23.135%
+DEBUG:root:==============================
+INFO:root:the step is 90
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0367714166641235
+DEBUG:root:a new experience, indexed by 10662, was appended
+INFO:root:total returns are 27.663%
+DEBUG:root:==============================
+INFO:root:the step is 91
+DEBUG:root:the raw omega is [0.   0.   0.   0.78 0.22]
+DEBUG:root:the portfolio change this period is : 1.0007625806104627
+DEBUG:root:a new experience, indexed by 10663, was appended
+INFO:root:total returns are 27.760%
+DEBUG:root:==============================
+INFO:root:the step is 92
+DEBUG:root:the raw omega is [0.  0.  0.  0.6 0.4]
+DEBUG:root:the portfolio change this period is : 0.9950852571411613
+DEBUG:root:a new experience, indexed by 10664, was appended
+INFO:root:total returns are 27.132%
+DEBUG:root:==============================
+INFO:root:the step is 93
+DEBUG:root:the raw omega is [0.  0.  0.  0.7 0.3]
+DEBUG:root:the portfolio change this period is : 0.9966956494906682
+DEBUG:root:a new experience, indexed by 10665, was appended
+INFO:root:total returns are 26.712%
+DEBUG:root:==============================
+INFO:root:the step is 94
+DEBUG:root:the raw omega is [0.   0.   0.   0.01 0.99]
+DEBUG:root:the portfolio change this period is : 1.0000000093132257
+DEBUG:root:a new experience, indexed by 10666, was appended
+INFO:root:total returns are 26.712%
+DEBUG:root:==============================
+INFO:root:the step is 95
+DEBUG:root:the raw omega is [0.   0.   0.   0.04 0.96]
+DEBUG:root:the portfolio change this period is : 0.9999999776482582
+DEBUG:root:a new experience, indexed by 10667, was appended
+INFO:root:total returns are 26.712%
+DEBUG:root:==============================
+INFO:root:the step is 96
+DEBUG:root:the raw omega is [0.   0.   0.   0.06 0.94]
+DEBUG:root:the portfolio change this period is : 0.9925148032817044
+DEBUG:root:a new experience, indexed by 10668, was appended
+INFO:root:total returns are 25.764%
+DEBUG:root:==============================
+INFO:root:the step is 97
+DEBUG:root:the raw omega is [0.   0.   0.   0.01 0.99]
+DEBUG:root:the portfolio change this period is : 1.003750440886383
+DEBUG:root:a new experience, indexed by 10669, was appended
+INFO:root:total returns are 26.236%
+DEBUG:root:==============================
+INFO:root:the step is 98
+DEBUG:root:the raw omega is [0.   0.   0.02 0.04 0.94]
+DEBUG:root:the portfolio change this period is : 1.0054179845588234
+DEBUG:root:a new experience, indexed by 10670, was appended
+INFO:root:total returns are 26.920%
+DEBUG:root:==============================
+INFO:root:the step is 99
+DEBUG:root:the raw omega is [0.   0.28 0.11 0.22 0.39]
+DEBUG:root:the portfolio change this period is : 0.9878350734343373
+DEBUG:root:a new experience, indexed by 10671, was appended
+INFO:root:total returns are 25.376%
+DEBUG:root:==============================
+INFO:root:the step is 100
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10672, was appended
+INFO:root:total returns are 25.376%
+DEBUG:root:==============================
+INFO:root:the step is 101
+DEBUG:root:the raw omega is [0.   0.39 0.61 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10673, was appended
+INFO:root:total returns are 25.376%
+DEBUG:root:==============================
+INFO:root:the step is 102
+DEBUG:root:the raw omega is [0.   0.56 0.44 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10674, was appended
+INFO:root:total returns are 25.376%
+DEBUG:root:==============================
+INFO:root:the step is 103
+DEBUG:root:the raw omega is [0.   0.39 0.61 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 0.9887469612250968
+DEBUG:root:a new experience, indexed by 10675, was appended
+INFO:root:total returns are 23.965%
+DEBUG:root:==============================
+INFO:root:the step is 104
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10676, was appended
+INFO:root:total returns are 23.965%
+DEBUG:root:==============================
+INFO:root:the step is 105
+DEBUG:root:the raw omega is [0.   0.99 0.01 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 0.9998808179077325
+DEBUG:root:a new experience, indexed by 10677, was appended
+INFO:root:total returns are 23.950%
+DEBUG:root:==============================
+INFO:root:the step is 106
+DEBUG:root:the raw omega is [0.   0.11 0.89 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 0.9999999850988388
+DEBUG:root:a new experience, indexed by 10678, was appended
+INFO:root:total returns are 23.950%
+DEBUG:root:==============================
+INFO:root:the step is 107
+DEBUG:root:the raw omega is [0.   0.28 0.72 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 0.9988270246766611
+DEBUG:root:a new experience, indexed by 10679, was appended
+INFO:root:total returns are 23.805%
+DEBUG:root:==============================
+INFO:root:the step is 108
+DEBUG:root:the raw omega is [0.   0.32 0.68 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10680, was appended
+INFO:root:total returns are 23.805%
+DEBUG:root:==============================
+INFO:root:the step is 109
+DEBUG:root:the raw omega is [0.   0.27 0.72 0.   0.01]
+DEBUG:root:the portfolio change this period is : 1.0000000391155481
+DEBUG:root:a new experience, indexed by 10681, was appended
+INFO:root:total returns are 23.805%
+DEBUG:root:==============================
+INFO:root:the step is 110
+DEBUG:root:the raw omega is [0.   0.29 0.69 0.   0.02]
+DEBUG:root:the portfolio change this period is : 1.006394186693702
+DEBUG:root:a new experience, indexed by 10682, was appended
+INFO:root:total returns are 24.596%
+DEBUG:root:==============================
+INFO:root:the step is 111
+DEBUG:root:the raw omega is [0.   0.05 0.16 0.02 0.77]
+DEBUG:root:the portfolio change this period is : 1.0078474380085614
+DEBUG:root:a new experience, indexed by 10683, was appended
+INFO:root:total returns are 25.574%
+DEBUG:root:==============================
+INFO:root:the step is 112
+DEBUG:root:the raw omega is [0.   0.   0.22 0.   0.78]
+DEBUG:root:the portfolio change this period is : 0.9990960037525944
+DEBUG:root:a new experience, indexed by 10684, was appended
+INFO:root:total returns are 25.460%
+DEBUG:root:==============================
+INFO:root:the step is 113
+DEBUG:root:the raw omega is [0.   0.   0.8  0.15 0.05]
+DEBUG:root:the portfolio change this period is : 0.9937519199208846
+DEBUG:root:a new experience, indexed by 10685, was appended
+INFO:root:total returns are 24.677%
+DEBUG:root:==============================
+INFO:root:the step is 114
+DEBUG:root:the raw omega is [0.   0.   0.48 0.01 0.51]
+DEBUG:root:the portfolio change this period is : 1.00624342883136
+DEBUG:root:a new experience, indexed by 10686, was appended
+INFO:root:total returns are 25.455%
+DEBUG:root:==============================
+INFO:root:the step is 115
+DEBUG:root:the raw omega is [0.   0.   0.01 0.98 0.01]
+DEBUG:root:the portfolio change this period is : 1.0000000186264515
+DEBUG:root:a new experience, indexed by 10687, was appended
+INFO:root:total returns are 25.455%
+DEBUG:root:==============================
+INFO:root:the step is 116
+DEBUG:root:the raw omega is [0.   0.01 0.04 0.89 0.06]
+DEBUG:root:the portfolio change this period is : 0.9999999832361937
+DEBUG:root:a new experience, indexed by 10688, was appended
+INFO:root:total returns are 25.455%
+DEBUG:root:==============================
+INFO:root:the step is 117
+DEBUG:root:the raw omega is [0.   0.03 0.05 0.85 0.07]
+DEBUG:root:the portfolio change this period is : 1.0085733026350743
+DEBUG:root:a new experience, indexed by 10689, was appended
+INFO:root:total returns are 26.530%
+DEBUG:root:==============================
+INFO:root:the step is 118
+DEBUG:root:the raw omega is [0.   0.1  0.54 0.06 0.3 ]
+DEBUG:root:the portfolio change this period is : 0.9979796076577656
+DEBUG:root:a new experience, indexed by 10690, was appended
+INFO:root:total returns are 26.275%
+DEBUG:root:==============================
+INFO:root:the step is 119
+DEBUG:root:the raw omega is [0.   0.   0.38 0.62 0.  ]
+DEBUG:root:the portfolio change this period is : 1.002499217958274
+DEBUG:root:a new experience, indexed by 10691, was appended
+INFO:root:total returns are 26.590%
+DEBUG:root:==============================
+INFO:root:the step is 120
+DEBUG:root:the raw omega is [0.   0.   0.07 0.9  0.03]
+DEBUG:root:the portfolio change this period is : 0.9952357939109159
+DEBUG:root:a new experience, indexed by 10692, was appended
+INFO:root:total returns are 25.987%
+DEBUG:root:==============================
+INFO:root:the step is 121
+DEBUG:root:the raw omega is [0.   0.   0.13 0.01 0.86]
+DEBUG:root:the portfolio change this period is : 1.0166013049562668
+DEBUG:root:a new experience, indexed by 10693, was appended
+INFO:root:total returns are 28.079%
+DEBUG:root:==============================
+INFO:root:the step is 122
+DEBUG:root:the raw omega is [0.   0.   0.07 0.87 0.06]
+DEBUG:root:the portfolio change this period is : 1.0000000037252903
+DEBUG:root:a new experience, indexed by 10694, was appended
+INFO:root:total returns are 28.079%
+DEBUG:root:==============================
+INFO:root:the step is 123
+DEBUG:root:the raw omega is [0.   0.01 0.15 0.57 0.27]
+DEBUG:root:the portfolio change this period is : 1.0000000093132257
+DEBUG:root:a new experience, indexed by 10695, was appended
+INFO:root:total returns are 28.079%
+DEBUG:root:==============================
+INFO:root:the step is 124
+DEBUG:root:the raw omega is [0.   0.03 0.16 0.59 0.22]
+DEBUG:root:the portfolio change this period is : 0.9963334053980846
+DEBUG:root:a new experience, indexed by 10696, was appended
+INFO:root:total returns are 27.609%
+DEBUG:root:==============================
+INFO:root:the step is 125
+DEBUG:root:the raw omega is [0.   0.02 0.89 0.05 0.04]
+DEBUG:root:the portfolio change this period is : 1.024460238440174
+DEBUG:root:a new experience, indexed by 10697, was appended
+INFO:root:total returns are 30.731%
+DEBUG:root:==============================
+INFO:root:the step is 126
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.015673279762268
+DEBUG:root:a new experience, indexed by 10698, was appended
+INFO:root:total returns are 32.780%
+DEBUG:root:==============================
+INFO:root:the step is 127
+DEBUG:root:the raw omega is [0.   0.96 0.   0.02 0.02]
+DEBUG:root:the portfolio change this period is : 1.0008704545899374
+DEBUG:root:a new experience, indexed by 10699, was appended
+INFO:root:total returns are 32.895%
+DEBUG:root:==============================
+INFO:root:the step is 128
+DEBUG:root:the raw omega is [0.   0.89 0.   0.06 0.05]
+DEBUG:root:the portfolio change this period is : 1.0036082094324361
+DEBUG:root:a new experience, indexed by 10700, was appended
+INFO:root:total returns are 33.375%
+DEBUG:root:==============================
+INFO:root:the step is 129
+DEBUG:root:the raw omega is [0.   0.66 0.   0.06 0.28]
+DEBUG:root:the portfolio change this period is : 1.000000026077032
+DEBUG:root:a new experience, indexed by 10701, was appended
+INFO:root:total returns are 33.375%
+DEBUG:root:==============================
+INFO:root:the step is 130
+DEBUG:root:the raw omega is [0.   0.65 0.   0.09 0.26]
+DEBUG:root:the portfolio change this period is : 0.9999999701976776
+DEBUG:root:a new experience, indexed by 10702, was appended
+INFO:root:total returns are 33.375%
+DEBUG:root:==============================
+INFO:root:the step is 131
+DEBUG:root:the raw omega is [0.   0.62 0.   0.11 0.27]
+DEBUG:root:the portfolio change this period is : 1.008587663835769
+DEBUG:root:a new experience, indexed by 10703, was appended
+INFO:root:total returns are 34.520%
+DEBUG:root:==============================
+INFO:root:the step is 132
+DEBUG:root:the raw omega is [0.   0.   0.   0.33 0.67]
+DEBUG:root:the portfolio change this period is : 0.995394507526921
+DEBUG:root:a new experience, indexed by 10704, was appended
+INFO:root:total returns are 33.901%
+DEBUG:root:==============================
+INFO:root:the step is 133
+DEBUG:root:the raw omega is [0.   0.   0.04 0.05 0.91]
+DEBUG:root:the portfolio change this period is : 0.9940587094361195
+DEBUG:root:a new experience, indexed by 10705, was appended
+INFO:root:total returns are 33.105%
+DEBUG:root:==============================
+INFO:root:the step is 134
+DEBUG:root:the raw omega is [0.   0.   0.24 0.   0.76]
+DEBUG:root:the portfolio change this period is : 0.998836447614952
+DEBUG:root:a new experience, indexed by 10706, was appended
+INFO:root:total returns are 32.950%
+DEBUG:root:==============================
+INFO:root:the step is 135
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0048108100891113
+DEBUG:root:a new experience, indexed by 10707, was appended
+INFO:root:total returns are 33.590%
+DEBUG:root:==============================
+INFO:root:the step is 136
+DEBUG:root:the raw omega is [0.   0.03 0.97 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0000000279396772
+DEBUG:root:a new experience, indexed by 10708, was appended
+INFO:root:total returns are 33.590%
+DEBUG:root:==============================
+INFO:root:the step is 137
+DEBUG:root:the raw omega is [0.   0.19 0.81 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10709, was appended
+INFO:root:total returns are 33.590%
+DEBUG:root:==============================
+INFO:root:the step is 138
+DEBUG:root:the raw omega is [0.   0.14 0.86 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0007247311062155
+DEBUG:root:a new experience, indexed by 10710, was appended
+INFO:root:total returns are 33.687%
+DEBUG:root:==============================
+INFO:root:the step is 139
+DEBUG:root:the raw omega is [0.   0.68 0.32 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0080484246695036
+DEBUG:root:a new experience, indexed by 10711, was appended
+INFO:root:total returns are 34.762%
+DEBUG:root:==============================
+INFO:root:the step is 140
+DEBUG:root:the raw omega is [0.   0.95 0.03 0.02 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0087168717049326
+DEBUG:root:a new experience, indexed by 10712, was appended
+INFO:root:total returns are 35.937%
+DEBUG:root:==============================
+INFO:root:the step is 141
+DEBUG:root:the raw omega is [0.   0.01 0.99 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 0.9898289170657396
+DEBUG:root:a new experience, indexed by 10713, was appended
+INFO:root:total returns are 34.555%
+DEBUG:root:==============================
+INFO:root:the step is 142
+DEBUG:root:the raw omega is [0.   0.05 0.94 0.   0.01]
+DEBUG:root:the portfolio change this period is : 0.9751080095656123
+DEBUG:root:a new experience, indexed by 10714, was appended
+INFO:root:total returns are 31.205%
+DEBUG:root:==============================
+INFO:root:the step is 143
+DEBUG:root:the raw omega is [0. 0. 1. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10715, was appended
+INFO:root:total returns are 31.205%
+DEBUG:root:==============================
+INFO:root:the step is 144
+DEBUG:root:the raw omega is [0. 0. 1. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10716, was appended
+INFO:root:total returns are 31.205%
+DEBUG:root:==============================
+INFO:root:the step is 145
+DEBUG:root:the raw omega is [0.   0.   0.99 0.   0.01]
+DEBUG:root:the portfolio change this period is : 0.9802992470936865
+DEBUG:root:a new experience, indexed by 10717, was appended
+INFO:root:total returns are 28.620%
+DEBUG:root:==============================
+INFO:root:the step is 146
+DEBUG:root:the raw omega is [0.   0.61 0.39 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 0.9862003035747264
+DEBUG:root:a new experience, indexed by 10718, was appended
+INFO:root:total returns are 26.845%
+DEBUG:root:==============================
+INFO:root:the step is 147
+DEBUG:root:the raw omega is [0.   0.01 0.99 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0117603849250179
+DEBUG:root:a new experience, indexed by 10719, was appended
+INFO:root:total returns are 28.337%
+DEBUG:root:==============================
+INFO:root:the step is 148
+DEBUG:root:the raw omega is [0.   0.68 0.28 0.   0.04]
+DEBUG:root:the portfolio change this period is : 0.9780669213118611
+DEBUG:root:a new experience, indexed by 10720, was appended
+INFO:root:total returns are 25.522%
+DEBUG:root:==============================
+INFO:root:the step is 149
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0107243061065674
+DEBUG:root:a new experience, indexed by 10721, was appended
+INFO:root:total returns are 26.869%
+DEBUG:root:==============================
+INFO:root:the step is 150
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10722, was appended
+INFO:root:total returns are 26.869%
+DEBUG:root:==============================
+INFO:root:the step is 151
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10723, was appended
+INFO:root:total returns are 26.869%
+DEBUG:root:==============================
+INFO:root:the step is 152
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0234389305114746
+DEBUG:root:a new experience, indexed by 10724, was appended
+INFO:root:total returns are 29.842%
+DEBUG:root:==============================
+INFO:root:the step is 153
+DEBUG:root:the raw omega is [0.  0.1 0.  0.9 0. ]
+DEBUG:root:the portfolio change this period is : 1.0037173762461151
+DEBUG:root:a new experience, indexed by 10725, was appended
+INFO:root:total returns are 30.325%
+DEBUG:root:==============================
+INFO:root:the step is 154
+DEBUG:root:the raw omega is [0. 0. 0. 1. 0.]
+DEBUG:root:the portfolio change this period is : 0.9983484148979187
+DEBUG:root:a new experience, indexed by 10726, was appended
+INFO:root:total returns are 30.110%
+DEBUG:root:==============================
+INFO:root:the step is 155
+DEBUG:root:the raw omega is [0.   0.05 0.   0.95 0.  ]
+DEBUG:root:the portfolio change this period is : 1.01323312580356
+DEBUG:root:a new experience, indexed by 10727, was appended
+INFO:root:total returns are 31.831%
+DEBUG:root:==============================
+INFO:root:the step is 156
+DEBUG:root:the raw omega is [0.   0.17 0.   0.83 0.  ]
+DEBUG:root:the portfolio change this period is : 0.9567199139404936
+DEBUG:root:a new experience, indexed by 10728, was appended
+INFO:root:total returns are 26.126%
+DEBUG:root:==============================
+INFO:root:the step is 157
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10729, was appended
+INFO:root:total returns are 26.126%
+DEBUG:root:==============================
+INFO:root:the step is 158
+DEBUG:root:the raw omega is [0.   0.99 0.01 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0000000093132257
+DEBUG:root:a new experience, indexed by 10730, was appended
+INFO:root:total returns are 26.126%
+DEBUG:root:==============================
+INFO:root:the step is 159
+DEBUG:root:the raw omega is [0.   0.95 0.05 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0212780360798863
+DEBUG:root:a new experience, indexed by 10731, was appended
+INFO:root:total returns are 28.809%
+DEBUG:root:==============================
+INFO:root:the step is 160
+DEBUG:root:the raw omega is [0. 0. 1. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.022699236869812
+DEBUG:root:a new experience, indexed by 10732, was appended
+INFO:root:total returns are 31.733%
+DEBUG:root:==============================
+INFO:root:the step is 161
+DEBUG:root:the raw omega is [0. 0. 1. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0266468524932861
+DEBUG:root:a new experience, indexed by 10733, was appended
+INFO:root:total returns are 35.244%
+DEBUG:root:==============================
+INFO:root:the step is 162
+DEBUG:root:the raw omega is [0.   0.06 0.86 0.08 0.  ]
+DEBUG:root:the portfolio change this period is : 1.011007174839917
+DEBUG:root:a new experience, indexed by 10734, was appended
+INFO:root:total returns are 36.732%
+DEBUG:root:==============================
+INFO:root:the step is 163
+DEBUG:root:the raw omega is [0.   0.97 0.03 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.006828056094762
+DEBUG:root:a new experience, indexed by 10735, was appended
+INFO:root:total returns are 37.666%
+DEBUG:root:==============================
+INFO:root:the step is 164
+DEBUG:root:the raw omega is [0.   0.83 0.13 0.04 0.  ]
+DEBUG:root:the portfolio change this period is : 0.9999999776482582
+DEBUG:root:a new experience, indexed by 10736, was appended
+INFO:root:total returns are 37.666%
+DEBUG:root:==============================
+INFO:root:the step is 165
+DEBUG:root:the raw omega is [0.   0.79 0.15 0.06 0.  ]
+DEBUG:root:the portfolio change this period is : 1.000000026077032
+DEBUG:root:a new experience, indexed by 10737, was appended
+INFO:root:total returns are 37.666%
+DEBUG:root:==============================
+INFO:root:the step is 166
+DEBUG:root:the raw omega is [0.   0.63 0.24 0.13 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0020131760939854
+DEBUG:root:a new experience, indexed by 10738, was appended
+INFO:root:total returns are 37.943%
+DEBUG:root:==============================
+INFO:root:the step is 167
+DEBUG:root:the raw omega is [0.   0.01 0.96 0.03 0.  ]
+DEBUG:root:the portfolio change this period is : 0.9831814820353351
+DEBUG:root:a new experience, indexed by 10739, was appended
+INFO:root:total returns are 35.623%
+DEBUG:root:==============================
+INFO:root:the step is 168
+DEBUG:root:the raw omega is [0. 0. 1. 0. 0.]
+DEBUG:root:the portfolio change this period is : 0.9816879034042358
+DEBUG:root:a new experience, indexed by 10740, was appended
+INFO:root:total returns are 33.139%
+DEBUG:root:==============================
+INFO:root:the step is 169
+DEBUG:root:the raw omega is [0. 0. 1. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.00678288936615
+DEBUG:root:a new experience, indexed by 10741, was appended
+INFO:root:total returns are 34.043%
+DEBUG:root:==============================
+INFO:root:the step is 170
+DEBUG:root:the raw omega is [0.  0.8 0.2 0.  0. ]
+DEBUG:root:the portfolio change this period is : 0.9953021197811083
+DEBUG:root:a new experience, indexed by 10742, was appended
+INFO:root:total returns are 33.413%
+DEBUG:root:==============================
+INFO:root:the step is 171
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10743, was appended
+INFO:root:total returns are 33.413%
+DEBUG:root:==============================
+INFO:root:the step is 172
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10744, was appended
+INFO:root:total returns are 33.413%
+DEBUG:root:==============================
+INFO:root:the step is 173
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0398385524749756
+DEBUG:root:a new experience, indexed by 10745, was appended
+INFO:root:total returns are 38.728%
+DEBUG:root:==============================
+INFO:root:the step is 174
+DEBUG:root:the raw omega is [0.   0.01 0.04 0.93 0.02]
+DEBUG:root:the portfolio change this period is : 1.0074254807383443
+DEBUG:root:a new experience, indexed by 10746, was appended
+INFO:root:total returns are 39.758%
+DEBUG:root:==============================
+INFO:root:the step is 175
+DEBUG:root:the raw omega is [0.   0.   0.   0.18 0.82]
+DEBUG:root:the portfolio change this period is : 0.9987612688661223
+DEBUG:root:a new experience, indexed by 10747, was appended
+INFO:root:total returns are 39.585%
+DEBUG:root:==============================
+INFO:root:the step is 176
+DEBUG:root:the raw omega is [0.  0.  0.  0.3 0.7]
+DEBUG:root:the portfolio change this period is : 0.9999060631709966
+DEBUG:root:a new experience, indexed by 10748, was appended
+INFO:root:total returns are 39.572%
+DEBUG:root:==============================
+INFO:root:the step is 177
+DEBUG:root:the raw omega is [0.   0.   0.   0.01 0.99]
+DEBUG:root:the portfolio change this period is : 1.0021880821352371
+DEBUG:root:a new experience, indexed by 10749, was appended
+INFO:root:total returns are 39.877%
+DEBUG:root:==============================
+INFO:root:the step is 178
+DEBUG:root:the raw omega is [0.   0.   0.   0.14 0.86]
+DEBUG:root:the portfolio change this period is : 1.0000000149011612
+DEBUG:root:a new experience, indexed by 10750, was appended
+INFO:root:total returns are 39.877%
+DEBUG:root:==============================
+INFO:root:the step is 179
+DEBUG:root:the raw omega is [0.   0.   0.   0.21 0.79]
+DEBUG:root:the portfolio change this period is : 1.0000000149011612
+DEBUG:root:a new experience, indexed by 10751, was appended
+INFO:root:total returns are 39.877%
+DEBUG:root:==============================
+INFO:root:the step is 180
+DEBUG:root:the raw omega is [0.  0.  0.  0.3 0.7]
+DEBUG:root:the portfolio change this period is : 1.0034624934012513
+DEBUG:root:a new experience, indexed by 10752, was appended
+INFO:root:total returns are 40.361%
+DEBUG:root:==============================
+INFO:root:the step is 181
+DEBUG:root:the raw omega is [0.   0.   0.13 0.45 0.42]
+DEBUG:root:the portfolio change this period is : 0.9986799461074547
+DEBUG:root:a new experience, indexed by 10753, was appended
+INFO:root:total returns are 40.176%
+DEBUG:root:==============================
+INFO:root:the step is 182
+DEBUG:root:the raw omega is [0.   0.   0.77 0.15 0.08]
+DEBUG:root:the portfolio change this period is : 1.010436007164211
+DEBUG:root:a new experience, indexed by 10754, was appended
+INFO:root:total returns are 41.639%
+DEBUG:root:==============================
+INFO:root:the step is 183
+DEBUG:root:the raw omega is [0.   0.   0.03 0.65 0.32]
+DEBUG:root:the portfolio change this period is : 0.9962835258667542
+DEBUG:root:a new experience, indexed by 10755, was appended
+INFO:root:total returns are 41.113%
+DEBUG:root:==============================
+INFO:root:the step is 184
+DEBUG:root:the raw omega is [0.   0.   0.02 0.49 0.49]
+DEBUG:root:the portfolio change this period is : 1.004493835803848
+DEBUG:root:a new experience, indexed by 10756, was appended
+INFO:root:total returns are 41.747%
+DEBUG:root:==============================
+INFO:root:the step is 185
+DEBUG:root:the raw omega is [0.   0.11 0.19 0.4  0.3 ]
+DEBUG:root:the portfolio change this period is : 1.0000000149011612
+DEBUG:root:a new experience, indexed by 10757, was appended
+INFO:root:total returns are 41.747%
+DEBUG:root:==============================
+INFO:root:the step is 186
+DEBUG:root:the raw omega is [0.   0.32 0.17 0.27 0.24]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10758, was appended
+INFO:root:total returns are 41.747%
+DEBUG:root:==============================
+INFO:root:the step is 187
+DEBUG:root:the raw omega is [0.   0.49 0.17 0.19 0.15]
+DEBUG:root:the portfolio change this period is : 0.9988257789469426
+DEBUG:root:a new experience, indexed by 10759, was appended
+INFO:root:total returns are 41.580%
+DEBUG:root:==============================
+INFO:root:the step is 188
+DEBUG:root:the raw omega is [0.   0.31 0.07 0.35 0.27]
+DEBUG:root:the portfolio change this period is : 0.9963808783757182
+DEBUG:root:a new experience, indexed by 10760, was appended
+INFO:root:total returns are 41.068%
+DEBUG:root:==============================
+INFO:root:the step is 189
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0171995162963867
+DEBUG:root:a new experience, indexed by 10761, was appended
+INFO:root:total returns are 43.494%
+DEBUG:root:==============================
+INFO:root:the step is 190
+DEBUG:root:the raw omega is [0.   0.03 0.   0.94 0.03]
+DEBUG:root:the portfolio change this period is : 1.0010409216649294
+DEBUG:root:a new experience, indexed by 10762, was appended
+INFO:root:total returns are 43.644%
+DEBUG:root:==============================
+INFO:root:the step is 191
+DEBUG:root:the raw omega is [0.   0.93 0.05 0.01 0.01]
+DEBUG:root:the portfolio change this period is : 1.0056539860826184
+DEBUG:root:a new experience, indexed by 10763, was appended
+INFO:root:total returns are 44.456%
+DEBUG:root:==============================
+INFO:root:the step is 192
+DEBUG:root:the raw omega is [0.   0.38 0.02 0.2  0.4 ]
+DEBUG:root:the portfolio change this period is : 1.0000000037252903
+DEBUG:root:a new experience, indexed by 10764, was appended
+INFO:root:total returns are 44.456%
+DEBUG:root:==============================
+INFO:root:the step is 193
+DEBUG:root:the raw omega is [0.   0.49 0.04 0.17 0.3 ]
+DEBUG:root:the portfolio change this period is : 1.0000000223517418
+DEBUG:root:a new experience, indexed by 10765, was appended
+INFO:root:total returns are 44.456%
+DEBUG:root:==============================
+INFO:root:the step is 194
+DEBUG:root:the raw omega is [0.   0.41 0.05 0.19 0.35]
+DEBUG:root:the portfolio change this period is : 0.999817793533996
+DEBUG:root:a new experience, indexed by 10766, was appended
+INFO:root:total returns are 44.429%
+DEBUG:root:==============================
+INFO:root:the step is 195
+DEBUG:root:the raw omega is [0.   0.02 0.02 0.11 0.85]
+DEBUG:root:the portfolio change this period is : 0.9922813166667648
+DEBUG:root:a new experience, indexed by 10767, was appended
+INFO:root:total returns are 43.315%
+DEBUG:root:==============================
+INFO:root:the step is 196
+DEBUG:root:the raw omega is [0. 0. 1. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.001403570175171
+DEBUG:root:a new experience, indexed by 10768, was appended
+INFO:root:total returns are 43.516%
+DEBUG:root:==============================
+INFO:root:the step is 197
+DEBUG:root:the raw omega is [0.   0.99 0.01 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.010646978493422
+DEBUG:root:a new experience, indexed by 10769, was appended
+INFO:root:total returns are 45.044%
+DEBUG:root:==============================
+INFO:root:the step is 198
+DEBUG:root:the raw omega is [0.   0.61 0.39 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0054856834773744
+DEBUG:root:a new experience, indexed by 10770, was appended
+INFO:root:total returns are 45.839%
+DEBUG:root:==============================
+INFO:root:the step is 199
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10771, was appended
+INFO:root:total returns are 45.839%
+DEBUG:root:==============================
+INFO:root:the step is 200
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10772, was appended
+INFO:root:total returns are 45.839%
+DEBUG:root:==============================
+INFO:root:the step is 201
+DEBUG:root:the raw omega is [0.   0.98 0.01 0.01 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0239044749909743
+DEBUG:root:a new experience, indexed by 10773, was appended
+INFO:root:total returns are 49.326%
+DEBUG:root:==============================
+INFO:root:the step is 202
+DEBUG:root:the raw omega is [0.   0.   0.14 0.83 0.03]
+DEBUG:root:the portfolio change this period is : 1.002680485172645
+DEBUG:root:a new experience, indexed by 10774, was appended
+INFO:root:total returns are 49.726%
+DEBUG:root:==============================
+INFO:root:the step is 203
+DEBUG:root:the raw omega is [0.   0.   0.   0.99 0.01]
+DEBUG:root:the portfolio change this period is : 0.9971860662569629
+DEBUG:root:a new experience, indexed by 10775, was appended
+INFO:root:total returns are 49.305%
+DEBUG:root:==============================
+INFO:root:the step is 204
+DEBUG:root:the raw omega is [0. 0. 0. 1. 0.]
+DEBUG:root:the portfolio change this period is : 1.0047346353530884
+DEBUG:root:a new experience, indexed by 10776, was appended
+INFO:root:total returns are 50.011%
+DEBUG:root:==============================
+INFO:root:the step is 205
+DEBUG:root:the raw omega is [0.   0.01 0.   0.99 0.  ]
+DEBUG:root:the portfolio change this period is : 0.99932237661369
+DEBUG:root:a new experience, indexed by 10777, was appended
+INFO:root:total returns are 49.910%
+DEBUG:root:==============================
+INFO:root:the step is 206
+DEBUG:root:the raw omega is [0. 0. 0. 1. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10778, was appended
+INFO:root:total returns are 49.910%
+DEBUG:root:==============================
+INFO:root:the step is 207
+DEBUG:root:the raw omega is [0.   0.   0.01 0.98 0.01]
+DEBUG:root:the portfolio change this period is : 1.0000000186264515
+DEBUG:root:a new experience, indexed by 10779, was appended
+INFO:root:total returns are 49.910%
+DEBUG:root:==============================
+INFO:root:the step is 208
+DEBUG:root:the raw omega is [0.   0.   0.02 0.94 0.04]
+DEBUG:root:the portfolio change this period is : 1.0027821789580273
+DEBUG:root:a new experience, indexed by 10780, was appended
+INFO:root:total returns are 50.327%
+DEBUG:root:==============================
+INFO:root:the step is 209
+DEBUG:root:the raw omega is [0.   0.07 0.11 0.76 0.06]
+DEBUG:root:the portfolio change this period is : 0.9931944879024583
+DEBUG:root:a new experience, indexed by 10781, was appended
+INFO:root:total returns are 49.304%
+DEBUG:root:==============================
+INFO:root:the step is 210
+DEBUG:root:the raw omega is [0.   0.91 0.06 0.02 0.01]
+DEBUG:root:the portfolio change this period is : 1.0074547195717405
+DEBUG:root:a new experience, indexed by 10782, was appended
+INFO:root:total returns are 50.417%
+DEBUG:root:==============================
+INFO:root:the step is 211
+DEBUG:root:the raw omega is [0.   0.   0.99 0.   0.01]
+DEBUG:root:the portfolio change this period is : 1.0049168644569497
+DEBUG:root:a new experience, indexed by 10783, was appended
+INFO:root:total returns are 51.156%
+DEBUG:root:==============================
+INFO:root:the step is 212
+DEBUG:root:the raw omega is [0.   0.99 0.01 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0035012690344103
+DEBUG:root:a new experience, indexed by 10784, was appended
+INFO:root:total returns are 51.686%
+DEBUG:root:==============================
+INFO:root:the step is 213
+DEBUG:root:the raw omega is [0.   0.02 0.98 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0000000186264515
+DEBUG:root:a new experience, indexed by 10785, was appended
+INFO:root:total returns are 51.686%
+DEBUG:root:==============================
+INFO:root:the step is 214
+DEBUG:root:the raw omega is [0.   0.16 0.83 0.   0.01]
+DEBUG:root:the portfolio change this period is : 0.9999999795109034
+DEBUG:root:a new experience, indexed by 10786, was appended
+INFO:root:total returns are 51.686%
+DEBUG:root:==============================
+INFO:root:the step is 215
+DEBUG:root:the raw omega is [0.   0.21 0.77 0.   0.02]
+DEBUG:root:the portfolio change this period is : 0.998544777216269
+DEBUG:root:a new experience, indexed by 10787, was appended
+INFO:root:total returns are 51.465%
+DEBUG:root:==============================
+INFO:root:the step is 216
+DEBUG:root:the raw omega is [0.   0.02 0.86 0.   0.12]
+DEBUG:root:the portfolio change this period is : 1.010272125600975
+DEBUG:root:a new experience, indexed by 10788, was appended
+INFO:root:total returns are 53.021%
+DEBUG:root:==============================
+INFO:root:the step is 217
+DEBUG:root:the raw omega is [0.   0.98 0.   0.01 0.01]
+DEBUG:root:the portfolio change this period is : 1.0058367821261927
+DEBUG:root:a new experience, indexed by 10789, was appended
+INFO:root:total returns are 53.914%
+DEBUG:root:==============================
+INFO:root:the step is 218
+DEBUG:root:the raw omega is [0.   0.04 0.   0.34 0.62]
+DEBUG:root:the portfolio change this period is : 0.9977237871131006
+DEBUG:root:a new experience, indexed by 10790, was appended
+INFO:root:total returns are 53.564%
+DEBUG:root:==============================
+INFO:root:the step is 219
+DEBUG:root:the raw omega is [0.   0.13 0.05 0.26 0.56]
+DEBUG:root:the portfolio change this period is : 1.0001732637831555
+DEBUG:root:a new experience, indexed by 10791, was appended
+INFO:root:total returns are 53.590%
+DEBUG:root:==============================
+INFO:root:the step is 220
+DEBUG:root:the raw omega is [0.   0.98 0.   0.02 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0000000186264515
+DEBUG:root:a new experience, indexed by 10792, was appended
+INFO:root:total returns are 53.590%
+DEBUG:root:==============================
+INFO:root:the step is 221
+DEBUG:root:the raw omega is [0.   0.9  0.   0.08 0.02]
+DEBUG:root:the portfolio change this period is : 0.9999999739229679
+DEBUG:root:a new experience, indexed by 10793, was appended
+INFO:root:total returns are 53.590%
+DEBUG:root:==============================
+INFO:root:the step is 222
+DEBUG:root:the raw omega is [0.   0.82 0.   0.14 0.04]
+DEBUG:root:the portfolio change this period is : 1.0196161623173197
+DEBUG:root:a new experience, indexed by 10794, was appended
+INFO:root:total returns are 56.603%
+DEBUG:root:==============================
+INFO:root:the step is 223
+DEBUG:root:the raw omega is [0.   0.   0.24 0.15 0.61]
+DEBUG:root:the portfolio change this period is : 1.0007485788006107
+DEBUG:root:a new experience, indexed by 10795, was appended
+INFO:root:total returns are 56.720%
+DEBUG:root:==============================
+INFO:root:the step is 224
+DEBUG:root:the raw omega is [0.   0.   0.   0.27 0.73]
+DEBUG:root:the portfolio change this period is : 0.9951545690136854
+DEBUG:root:a new experience, indexed by 10796, was appended
+INFO:root:total returns are 55.961%
+DEBUG:root:==============================
+INFO:root:the step is 225
+DEBUG:root:the raw omega is [0.   0.   0.   0.08 0.92]
+DEBUG:root:the portfolio change this period is : 0.995175281079641
+DEBUG:root:a new experience, indexed by 10797, was appended
+INFO:root:total returns are 55.208%
+DEBUG:root:==============================
+INFO:root:the step is 226
+DEBUG:root:the raw omega is [0.   0.   0.   0.01 0.99]
+DEBUG:root:the portfolio change this period is : 1.0218540763711588
+DEBUG:root:a new experience, indexed by 10798, was appended
+INFO:root:total returns are 58.600%
+DEBUG:root:==============================
+INFO:root:the step is 227
+DEBUG:root:the raw omega is [0.   0.   0.   0.99 0.01]
+DEBUG:root:the portfolio change this period is : 1.0000000093132257
+DEBUG:root:a new experience, indexed by 10799, was appended
+INFO:root:total returns are 58.600%
+DEBUG:root:==============================
+INFO:root:the step is 228
+DEBUG:root:the raw omega is [0.   0.01 0.   0.94 0.05]
+DEBUG:root:the portfolio change this period is : 0.9999999981373549
+DEBUG:root:a new experience, indexed by 10800, was appended
+INFO:root:total returns are 58.600%
+DEBUG:root:==============================
+INFO:root:the step is 229
+DEBUG:root:the raw omega is [0.   0.04 0.   0.89 0.07]
+DEBUG:root:the portfolio change this period is : 1.000110436671363
+DEBUG:root:a new experience, indexed by 10801, was appended
+INFO:root:total returns are 58.618%
+DEBUG:root:==============================
+INFO:root:the step is 230
+DEBUG:root:the raw omega is [0.   0.   0.01 0.71 0.28]
+DEBUG:root:the portfolio change this period is : 0.9999203613418687
+DEBUG:root:a new experience, indexed by 10802, was appended
+INFO:root:total returns are 58.605%
+DEBUG:root:==============================
+INFO:root:the step is 231
+DEBUG:root:the raw omega is [0.   0.   0.01 0.01 0.98]
+DEBUG:root:the portfolio change this period is : 1.0030160816572151
+DEBUG:root:a new experience, indexed by 10803, was appended
+INFO:root:total returns are 59.084%
+DEBUG:root:==============================
+INFO:root:the step is 232
+DEBUG:root:the raw omega is [0.   0.03 0.   0.21 0.76]
+DEBUG:root:the portfolio change this period is : 1.0007839035240877
+DEBUG:root:a new experience, indexed by 10804, was appended
+INFO:root:total returns are 59.208%
+DEBUG:root:==============================
+INFO:root:the step is 233
+DEBUG:root:the raw omega is [0.   0.24 0.03 0.49 0.24]
+DEBUG:root:the portfolio change this period is : 0.9849273452742567
+DEBUG:root:a new experience, indexed by 10805, was appended
+INFO:root:total returns are 56.809%
+DEBUG:root:==============================
+INFO:root:the step is 234
+DEBUG:root:the raw omega is [0. 0. 0. 1. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10806, was appended
+INFO:root:total returns are 56.809%
+DEBUG:root:==============================
+INFO:root:the step is 235
+DEBUG:root:the raw omega is [0.   0.   0.   0.99 0.01]
+DEBUG:root:the portfolio change this period is : 1.0000000093132257
+DEBUG:root:a new experience, indexed by 10807, was appended
+INFO:root:total returns are 56.809%
+DEBUG:root:==============================
+INFO:root:the step is 236
+DEBUG:root:the raw omega is [0.   0.   0.   0.98 0.02]
+DEBUG:root:the portfolio change this period is : 1.0141590879726898
+DEBUG:root:a new experience, indexed by 10808, was appended
+INFO:root:total returns are 59.029%
+DEBUG:root:==============================
+INFO:root:the step is 237
+DEBUG:root:the raw omega is [0.   0.4  0.28 0.   0.32]
+DEBUG:root:the portfolio change this period is : 0.9961231303641451
+DEBUG:root:a new experience, indexed by 10809, was appended
+INFO:root:total returns are 58.412%
+DEBUG:root:==============================
+INFO:root:the step is 238
+DEBUG:root:the raw omega is [0.   0.   0.98 0.   0.02]
+DEBUG:root:the portfolio change this period is : 0.9967615968839163
+DEBUG:root:a new experience, indexed by 10810, was appended
+INFO:root:total returns are 57.899%
+DEBUG:root:==============================
+INFO:root:the step is 239
+DEBUG:root:the raw omega is [0.   0.02 0.97 0.   0.01]
+DEBUG:root:the portfolio change this period is : 1.002735484257247
+DEBUG:root:a new experience, indexed by 10811, was appended
+INFO:root:total returns are 58.331%
+DEBUG:root:==============================
+INFO:root:the step is 240
+DEBUG:root:the raw omega is [0.   0.99 0.01 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0067669294722768
+DEBUG:root:a new experience, indexed by 10812, was appended
+INFO:root:total returns are 59.403%
+DEBUG:root:==============================
+INFO:root:the step is 241
+DEBUG:root:the raw omega is [0. 0. 1. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10813, was appended
+INFO:root:total returns are 59.403%
+DEBUG:root:==============================
+INFO:root:the step is 242
+DEBUG:root:the raw omega is [0.   0.01 0.99 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0000000093132257
+DEBUG:root:a new experience, indexed by 10814, was appended
+INFO:root:total returns are 59.403%
+DEBUG:root:==============================
+INFO:root:the step is 243
+DEBUG:root:the raw omega is [0.   0.03 0.97 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0109252663943948
+DEBUG:root:a new experience, indexed by 10815, was appended
+INFO:root:total returns are 61.144%
+DEBUG:root:==============================
+INFO:root:the step is 244
+DEBUG:root:the raw omega is [0.   0.91 0.06 0.03 0.  ]
+DEBUG:root:the portfolio change this period is : 0.9984442904919353
+DEBUG:root:a new experience, indexed by 10816, was appended
+INFO:root:total returns are 60.894%
+DEBUG:root:==============================
+INFO:root:the step is 245
+DEBUG:root:the raw omega is [0.   0.78 0.18 0.04 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0164083609792947
+DEBUG:root:a new experience, indexed by 10817, was appended
+INFO:root:total returns are 63.534%
+DEBUG:root:==============================
+INFO:root:the step is 246
+DEBUG:root:the raw omega is [0.   0.01 0.94 0.04 0.01]
+DEBUG:root:the portfolio change this period is : 1.0222821090476584
+DEBUG:root:a new experience, indexed by 10818, was appended
+INFO:root:total returns are 67.177%
+DEBUG:root:==============================
+INFO:root:the step is 247
+DEBUG:root:the raw omega is [0.   0.87 0.   0.12 0.01]
+DEBUG:root:the portfolio change this period is : 0.9965342862161458
+DEBUG:root:a new experience, indexed by 10819, was appended
+INFO:root:total returns are 66.598%
+DEBUG:root:==============================
+INFO:root:the step is 248
+DEBUG:root:the raw omega is [0.   0.38 0.   0.61 0.01]
+DEBUG:root:the portfolio change this period is : 1.0000000093132257
+DEBUG:root:a new experience, indexed by 10820, was appended
+INFO:root:total returns are 66.598%
+DEBUG:root:==============================
+INFO:root:the step is 249
+DEBUG:root:the raw omega is [0.   0.51 0.01 0.47 0.01]
+DEBUG:root:the portfolio change this period is : 0.9999999888241291
+DEBUG:root:a new experience, indexed by 10821, was appended
+INFO:root:total returns are 66.598%
+DEBUG:root:==============================
+INFO:root:the step is 250
+DEBUG:root:the raw omega is [0.   0.33 0.01 0.64 0.02]
+DEBUG:root:the portfolio change this period is : 0.9899275218385226
+DEBUG:root:a new experience, indexed by 10822, was appended
+INFO:root:total returns are 64.920%
+DEBUG:root:==============================
+INFO:root:the step is 251
+DEBUG:root:the raw omega is [0.   0.33 0.53 0.07 0.07]
+DEBUG:root:the portfolio change this period is : 1.0022268869096491
+DEBUG:root:a new experience, indexed by 10823, was appended
+INFO:root:total returns are 65.287%
+DEBUG:root:==============================
+INFO:root:the step is 252
+DEBUG:root:the raw omega is [0.   0.   0.76 0.01 0.23]
+DEBUG:root:the portfolio change this period is : 1.0066475800017922
+DEBUG:root:a new experience, indexed by 10824, was appended
+INFO:root:total returns are 66.386%
+DEBUG:root:==============================
+INFO:root:the step is 253
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0138660669326782
+DEBUG:root:a new experience, indexed by 10825, was appended
+INFO:root:total returns are 68.693%
+DEBUG:root:==============================
+INFO:root:the step is 254
+DEBUG:root:the raw omega is [0.   0.01 0.24 0.75 0.  ]
+DEBUG:root:the portfolio change this period is : 1.00668505883122
+DEBUG:root:a new experience, indexed by 10826, was appended
+INFO:root:total returns are 69.821%
+DEBUG:root:==============================
+INFO:root:the step is 255
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10827, was appended
+INFO:root:total returns are 69.821%
+DEBUG:root:==============================
+INFO:root:the step is 256
+DEBUG:root:the raw omega is [0.   0.99 0.01 0.   0.  ]
+DEBUG:root:the portfolio change this period is : 1.0000000093132257
+DEBUG:root:a new experience, indexed by 10828, was appended
+INFO:root:total returns are 69.821%
+DEBUG:root:==============================
+INFO:root:the step is 257
+DEBUG:root:the raw omega is [0.   0.96 0.02 0.01 0.01]
+DEBUG:root:the portfolio change this period is : 1.0087500901054565
+DEBUG:root:a new experience, indexed by 10829, was appended
+INFO:root:total returns are 71.307%
+DEBUG:root:==============================
+INFO:root:the step is 258
+DEBUG:root:the raw omega is [0.   0.05 0.49 0.46 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0031989594437802
+DEBUG:root:a new experience, indexed by 10830, was appended
+INFO:root:total returns are 71.855%
+DEBUG:root:==============================
+INFO:root:the step is 259
+DEBUG:root:the raw omega is [0. 0. 0. 1. 0.]
+DEBUG:root:the portfolio change this period is : 1.0042966604232788
+DEBUG:root:a new experience, indexed by 10831, was appended
+INFO:root:total returns are 72.593%
+DEBUG:root:==============================
+INFO:root:the step is 260
+DEBUG:root:the raw omega is [0.   0.   0.05 0.95 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0003798611393133
+DEBUG:root:a new experience, indexed by 10832, was appended
+INFO:root:total returns are 72.659%
+DEBUG:root:==============================
+INFO:root:the step is 261
+DEBUG:root:the raw omega is [0.   0.   0.17 0.8  0.03]
+DEBUG:root:the portfolio change this period is : 0.9964055995833458
+DEBUG:root:a new experience, indexed by 10833, was appended
+INFO:root:total returns are 72.038%
+DEBUG:root:==============================
+INFO:root:the step is 262
+DEBUG:root:the raw omega is [0.   0.   0.61 0.39 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10834, was appended
+INFO:root:total returns are 72.038%
+DEBUG:root:==============================
+INFO:root:the step is 263
+DEBUG:root:the raw omega is [0.   0.   0.45 0.55 0.  ]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10835, was appended
+INFO:root:total returns are 72.038%
+DEBUG:root:==============================
+INFO:root:the step is 264
+DEBUG:root:the raw omega is [0.   0.   0.52 0.47 0.01]
+DEBUG:root:the portfolio change this period is : 1.0083386011348194
+DEBUG:root:a new experience, indexed by 10836, was appended
+INFO:root:total returns are 73.473%
+DEBUG:root:==============================
+INFO:root:the step is 265
+DEBUG:root:the raw omega is [0.   0.19 0.02 0.78 0.01]
+DEBUG:root:the portfolio change this period is : 0.9920106330147341
+DEBUG:root:a new experience, indexed by 10837, was appended
+INFO:root:total returns are 72.087%
+DEBUG:root:==============================
+INFO:root:the step is 266
+DEBUG:root:the raw omega is [0. 0. 0. 1. 0.]
+DEBUG:root:the portfolio change this period is : 1.0011465549468994
+DEBUG:root:a new experience, indexed by 10838, was appended
+INFO:root:total returns are 72.284%
+DEBUG:root:==============================
+INFO:root:the step is 267
+DEBUG:root:the raw omega is [0.   0.02 0.11 0.76 0.11]
+DEBUG:root:the portfolio change this period is : 0.995635438752217
+DEBUG:root:a new experience, indexed by 10839, was appended
+INFO:root:total returns are 71.532%
+DEBUG:root:==============================
+INFO:root:the step is 268
+DEBUG:root:the raw omega is [0.   0.01 0.81 0.07 0.11]
+DEBUG:root:the portfolio change this period is : 1.0142816860589745
+DEBUG:root:a new experience, indexed by 10840, was appended
+INFO:root:total returns are 73.982%
+DEBUG:root:==============================
+INFO:root:the step is 269
+DEBUG:root:the raw omega is [0.   0.01 0.   0.87 0.12]
+DEBUG:root:the portfolio change this period is : 1.0000000018626451
+DEBUG:root:a new experience, indexed by 10841, was appended
+INFO:root:total returns are 73.982%
+DEBUG:root:==============================
+INFO:root:the step is 270
+DEBUG:root:the raw omega is [0.   0.08 0.01 0.6  0.31]
+DEBUG:root:the portfolio change this period is : 1.000000024214387
+DEBUG:root:a new experience, indexed by 10842, was appended
+INFO:root:total returns are 73.982%
+DEBUG:root:==============================
+INFO:root:the step is 271
+DEBUG:root:the raw omega is [0.   0.12 0.01 0.59 0.28]
+DEBUG:root:the portfolio change this period is : 0.9958296598376113
+DEBUG:root:a new experience, indexed by 10843, was appended
+INFO:root:total returns are 73.256%
+DEBUG:root:==============================
+INFO:root:the step is 272
+DEBUG:root:the raw omega is [0.   0.   0.01 0.05 0.94]
+DEBUG:root:the portfolio change this period is : 1.0075398354814638
+DEBUG:root:a new experience, indexed by 10844, was appended
+INFO:root:total returns are 74.563%
+DEBUG:root:==============================
+INFO:root:the step is 273
+DEBUG:root:the raw omega is [0.   0.04 0.   0.3  0.66]
+DEBUG:root:the portfolio change this period is : 1.0028019325006738
+DEBUG:root:a new experience, indexed by 10845, was appended
+INFO:root:total returns are 75.052%
+DEBUG:root:==============================
+INFO:root:the step is 274
+DEBUG:root:the raw omega is [0.   0.08 0.01 0.33 0.58]
+DEBUG:root:the portfolio change this period is : 1.0011384615484382
+DEBUG:root:a new experience, indexed by 10846, was appended
+INFO:root:total returns are 75.251%
+DEBUG:root:==============================
+INFO:root:the step is 275
+DEBUG:root:the raw omega is [0.   0.   0.   0.63 0.37]
+DEBUG:root:the portfolio change this period is : 0.9996084314545115
+DEBUG:root:a new experience, indexed by 10847, was appended
+INFO:root:total returns are 75.182%
+DEBUG:root:==============================
+INFO:root:the step is 276
+DEBUG:root:the raw omega is [0.  0.  0.  0.4 0.6]
+DEBUG:root:the portfolio change this period is : 1.0000000298023224
+DEBUG:root:a new experience, indexed by 10848, was appended
+INFO:root:total returns are 75.182%
+DEBUG:root:==============================
+INFO:root:the step is 277
+DEBUG:root:the raw omega is [0.   0.01 0.   0.51 0.48]
+DEBUG:root:the portfolio change this period is : 0.9999999795109034
+DEBUG:root:a new experience, indexed by 10849, was appended
+INFO:root:total returns are 75.182%
+DEBUG:root:==============================
+INFO:root:the step is 278
+DEBUG:root:the raw omega is [0.   0.02 0.01 0.44 0.53]
+DEBUG:root:the portfolio change this period is : 0.9996284896640748
+DEBUG:root:a new experience, indexed by 10850, was appended
+INFO:root:total returns are 75.117%
+DEBUG:root:==============================
+INFO:root:the step is 279
+DEBUG:root:the raw omega is [0.   0.   0.   0.01 0.99]
+DEBUG:root:the portfolio change this period is : 1.004388857303839
+DEBUG:root:a new experience, indexed by 10851, was appended
+INFO:root:total returns are 75.886%
+DEBUG:root:==============================
+INFO:root:the step is 280
+DEBUG:root:the raw omega is [0.   0.   0.03 0.69 0.28]
+DEBUG:root:the portfolio change this period is : 0.9963606231613952
+DEBUG:root:a new experience, indexed by 10852, was appended
+INFO:root:total returns are 75.246%
+DEBUG:root:==============================
+INFO:root:the step is 281
+DEBUG:root:the raw omega is [0.   0.   0.   0.03 0.97]
+DEBUG:root:the portfolio change this period is : 1.0038806856124558
+DEBUG:root:a new experience, indexed by 10853, was appended
+INFO:root:total returns are 75.926%
+DEBUG:root:==============================
+INFO:root:the step is 282
+DEBUG:root:the raw omega is [0.   0.   0.02 0.85 0.13]
+DEBUG:root:the portfolio change this period is : 0.9974997974133573
+DEBUG:root:a new experience, indexed by 10854, was appended
+INFO:root:total returns are 75.486%
+DEBUG:root:==============================
+INFO:root:the step is 283
+DEBUG:root:the raw omega is [0.   0.   0.05 0.88 0.07]
+DEBUG:root:the portfolio change this period is : 0.9999999962747097
+DEBUG:root:a new experience, indexed by 10855, was appended
+INFO:root:total returns are 75.486%
+DEBUG:root:==============================
+INFO:root:the step is 284
+DEBUG:root:the raw omega is [0.   0.   0.1  0.79 0.11]
+DEBUG:root:the portfolio change this period is : 1.0000000223517418
+DEBUG:root:a new experience, indexed by 10856, was appended
+INFO:root:total returns are 75.486%
+DEBUG:root:==============================
+INFO:root:the step is 285
+DEBUG:root:the raw omega is [0.   0.   0.16 0.71 0.13]
+DEBUG:root:the portfolio change this period is : 0.9978854829664332
+DEBUG:root:a new experience, indexed by 10857, was appended
+INFO:root:total returns are 75.115%
+DEBUG:root:==============================
+INFO:root:the step is 286
+DEBUG:root:the raw omega is [0.   0.   0.74 0.04 0.22]
+DEBUG:root:the portfolio change this period is : 0.9907806625084521
+DEBUG:root:a new experience, indexed by 10858, was appended
+INFO:root:total returns are 73.501%
+DEBUG:root:==============================
+INFO:root:the step is 287
+DEBUG:root:the raw omega is [0.   0.   0.94 0.03 0.03]
+DEBUG:root:the portfolio change this period is : 0.9861292349254331
+DEBUG:root:a new experience, indexed by 10859, was appended
+INFO:root:total returns are 71.094%
+DEBUG:root:==============================
+INFO:root:the step is 288
+DEBUG:root:the raw omega is [0.   0.   0.99 0.   0.01]
+DEBUG:root:the portfolio change this period is : 0.9977007762146861
+DEBUG:root:a new experience, indexed by 10860, was appended
+INFO:root:total returns are 70.701%
+DEBUG:root:==============================
+INFO:root:the step is 289
+DEBUG:root:the raw omega is [0.   0.   0.67 0.01 0.32]
+DEBUG:root:the portfolio change this period is : 0.991128346692887
+DEBUG:root:a new experience, indexed by 10861, was appended
+INFO:root:total returns are 69.186%
+DEBUG:root:==============================
+INFO:root:the step is 290
+DEBUG:root:the raw omega is [0.   0.01 0.04 0.   0.95]
+DEBUG:root:the portfolio change this period is : 0.999999986961484
+DEBUG:root:a new experience, indexed by 10862, was appended
+INFO:root:total returns are 69.186%
+DEBUG:root:==============================
+INFO:root:the step is 291
+DEBUG:root:the raw omega is [0.   0.04 0.14 0.   0.82]
+DEBUG:root:the portfolio change this period is : 0.9999999925494194
+DEBUG:root:a new experience, indexed by 10863, was appended
+INFO:root:total returns are 69.186%
+DEBUG:root:==============================
+INFO:root:the step is 292
+DEBUG:root:the raw omega is [0.   0.09 0.14 0.   0.77]
+DEBUG:root:the portfolio change this period is : 1.0171148327420418
+DEBUG:root:a new experience, indexed by 10864, was appended
+INFO:root:total returns are 72.082%
+DEBUG:root:==============================
+INFO:root:the step is 293
+DEBUG:root:the raw omega is [0.   0.24 0.09 0.   0.67]
+DEBUG:root:the portfolio change this period is : 1.0039078755261297
+DEBUG:root:a new experience, indexed by 10865, was appended
+INFO:root:total returns are 72.754%
+DEBUG:root:==============================
+INFO:root:the step is 294
+DEBUG:root:the raw omega is [0.   0.87 0.03 0.   0.1 ]
+DEBUG:root:the portfolio change this period is : 0.9547257619853788
+DEBUG:root:a new experience, indexed by 10866, was appended
+INFO:root:total returns are 64.933%
+DEBUG:root:==============================
+INFO:root:the step is 295
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.067247748374939
+DEBUG:root:a new experience, indexed by 10867, was appended
+INFO:root:total returns are 76.024%
+DEBUG:root:==============================
+INFO:root:the step is 296
+DEBUG:root:the raw omega is [0. 0. 0. 0. 1.]
+DEBUG:root:the portfolio change this period is : 0.9857132434844971
+DEBUG:root:a new experience, indexed by 10868, was appended
+INFO:root:total returns are 73.509%
+DEBUG:root:==============================
+INFO:root:the step is 297
+DEBUG:root:the raw omega is [0. 0. 0. 0. 1.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10869, was appended
+INFO:root:total returns are 73.509%
+DEBUG:root:==============================
+INFO:root:the step is 298
+DEBUG:root:the raw omega is [0. 0. 0. 0. 1.]
+DEBUG:root:the portfolio change this period is : 1.0
+DEBUG:root:a new experience, indexed by 10870, was appended
+INFO:root:total returns are 73.509%
+DEBUG:root:==============================
+INFO:root:the step is 299
+DEBUG:root:the raw omega is [0. 0. 0. 0. 1.]
+DEBUG:root:the portfolio change this period is : 1.0033801794052124
+DEBUG:root:a new experience, indexed by 10871, was appended
+INFO:root:total returns are 74.096%
+DEBUG:root:==============================
+INFO:root:the step is 300
+DEBUG:root:the raw omega is [0.   0.   0.01 0.01 0.98]
+DEBUG:root:the portfolio change this period is : 1.0058482452830226
+DEBUG:root:a new experience, indexed by 10872, was appended
+INFO:root:total returns are 75.114%
+DEBUG:root:==============================
+INFO:root:the step is 301
+DEBUG:root:the raw omega is [0.   0.   0.17 0.01 0.82]
+DEBUG:root:the portfolio change this period is : 0.9934887770882923
+DEBUG:root:a new experience, indexed by 10873, was appended
+INFO:root:total returns are 73.974%
+DEBUG:root:==============================
+INFO:root:the step is 302
+DEBUG:root:the raw omega is [0.  0.  0.4 0.  0.6]
+DEBUG:root:the portfolio change this period is : 1.0060386957631131
+DEBUG:root:a new experience, indexed by 10874, was appended
+INFO:root:total returns are 75.025%
+DEBUG:root:==============================
+INFO:root:the step is 303
+DEBUG:root:the raw omega is [0.   0.   0.6  0.02 0.38]
+DEBUG:root:the portfolio change this period is : 0.9947586506595991
+DEBUG:root:a new experience, indexed by 10875, was appended
+INFO:root:total returns are 74.107%
+DEBUG:root:==============================
+INFO:root:the step is 304
+DEBUG:root:the raw omega is [0.   0.   0.9  0.01 0.09]
+DEBUG:root:the portfolio change this period is : 0.9999999795109034
+DEBUG:root:a new experience, indexed by 10876, was appended
+INFO:root:total returns are 74.107%
+DEBUG:root:==============================
+INFO:root:the step is 305
+DEBUG:root:the raw omega is [0.   0.   0.8  0.02 0.18]
+DEBUG:root:the portfolio change this period is : 1.0000000186264515
+DEBUG:root:a new experience, indexed by 10877, was appended
+INFO:root:total returns are 74.107%
+DEBUG:root:==============================
+INFO:root:the step is 306
+DEBUG:root:the raw omega is [0.   0.   0.77 0.05 0.18]
+DEBUG:root:the portfolio change this period is : 1.003525695284965
+DEBUG:root:a new experience, indexed by 10878, was appended
+INFO:root:total returns are 74.721%
+DEBUG:root:==============================
+INFO:root:the step is 307
+DEBUG:root:the raw omega is [0.   0.   0.36 0.01 0.63]
+DEBUG:root:the portfolio change this period is : 1.005251627960677
+DEBUG:root:a new experience, indexed by 10879, was appended
+INFO:root:total returns are 75.639%
+DEBUG:root:==============================
+INFO:root:the step is 308
+DEBUG:root:the raw omega is [0.   0.   0.76 0.08 0.16]
+DEBUG:root:the portfolio change this period is : 0.996974243559487
+DEBUG:root:a new experience, indexed by 10880, was appended
+INFO:root:total returns are 75.107%
+DEBUG:root:==============================
+INFO:root:the step is 309
+DEBUG:root:the raw omega is [0.   0.   0.9  0.02 0.08]
+DEBUG:root:the portfolio change this period is : 1.002645995696387
+DEBUG:root:a new experience, indexed by 10881, was appended
+INFO:root:total returns are 75.570%
+DEBUG:root:==============================
+INFO:root:the step is 310
+DEBUG:root:the raw omega is [0.   0.   0.64 0.18 0.18]
+DEBUG:root:the portfolio change this period is : 1.0026465010677938
+DEBUG:root:a new experience, indexed by 10882, was appended
+INFO:root:total returns are 76.035%
+DEBUG:root:==============================
+INFO:root:the step is 311
+DEBUG:root:the raw omega is [0.   0.   0.61 0.11 0.28]
+DEBUG:root:the portfolio change this period is : 1.0000000149011612
+DEBUG:root:a new experience, indexed by 10883, was appended
+INFO:root:total returns are 76.035%
+DEBUG:root:==============================
+INFO:root:the step is 312
+DEBUG:root:the raw omega is [0.   0.01 0.51 0.16 0.32]
+DEBUG:root:the portfolio change this period is : 0.9999999795109034
+DEBUG:root:a new experience, indexed by 10884, was appended
+INFO:root:total returns are 76.035%
+DEBUG:root:==============================
+INFO:root:the step is 313
+DEBUG:root:the raw omega is [0.   0.02 0.44 0.18 0.36]
+DEBUG:root:the portfolio change this period is : 0.9922971684244584
+DEBUG:root:a new experience, indexed by 10885, was appended
+INFO:root:total returns are 74.679%
+DEBUG:root:==============================
+INFO:root:the step is 314
+DEBUG:root:the raw omega is [0.   0.   0.87 0.04 0.09]
+DEBUG:root:the portfolio change this period is : 1.0059246716088586
+DEBUG:root:a new experience, indexed by 10886, was appended
+INFO:root:total returns are 75.714%
+DEBUG:root:==============================
+INFO:root:the step is 315
+DEBUG:root:the raw omega is [0.   0.01 0.01 0.03 0.95]
+DEBUG:root:the portfolio change this period is : 1.0016185814687648
+DEBUG:root:a new experience, indexed by 10887, was appended
+INFO:root:total returns are 75.998%
+DEBUG:root:==============================
+INFO:root:the step is 316
+DEBUG:root:the raw omega is [0.   0.07 0.01 0.51 0.41]
+DEBUG:root:the portfolio change this period is : 0.9970567424396676
+DEBUG:root:a new experience, indexed by 10888, was appended
+INFO:root:total returns are 75.480%
+DEBUG:root:==============================
+INFO:root:the step is 317
+DEBUG:root:the raw omega is [0.   0.   0.06 0.24 0.7 ]
+DEBUG:root:the portfolio change this period is : 0.9974792449617218
+DEBUG:root:a new experience, indexed by 10889, was appended
+INFO:root:total returns are 75.038%
+DEBUG:root:==============================
+INFO:root:the step is 318
+DEBUG:root:the raw omega is [0.   0.   0.3  0.08 0.62]
+DEBUG:root:the portfolio change this period is : 1.0000000149011612
+DEBUG:root:a new experience, indexed by 10890, was appended
+INFO:root:total returns are 75.038%
+DEBUG:root:==============================
+INFO:root:the step is 319
+DEBUG:root:the raw omega is [0.   0.   0.31 0.12 0.57]
+DEBUG:root:the portfolio change this period is : 0.9999999925494194
+DEBUG:root:a new experience, indexed by 10891, was appended
+INFO:root:total returns are 75.038%
+DEBUG:root:==============================
+INFO:root:the step is 320
+DEBUG:root:the raw omega is [0.   0.01 0.36 0.14 0.49]
+DEBUG:root:the portfolio change this period is : 1.0063975995610022
+DEBUG:root:a new experience, indexed by 10892, was appended
+INFO:root:total returns are 76.158%
+DEBUG:root:==============================
+INFO:root:the step is 321
+DEBUG:root:the raw omega is [0.   0.91 0.   0.   0.09]
+DEBUG:root:the portfolio change this period is : 1.004700281760293
+DEBUG:root:a new experience, indexed by 10893, was appended
+INFO:root:total returns are 76.986%
+DEBUG:root:==============================
+INFO:root:the step is 322
+DEBUG:root:the raw omega is [0.   0.76 0.   0.04 0.2 ]
+DEBUG:root:the portfolio change this period is : 1.0097726556371862
+DEBUG:root:a new experience, indexed by 10894, was appended
+INFO:root:total returns are 78.716%
+DEBUG:root:==============================
+INFO:root:the step is 323
+DEBUG:root:the raw omega is [0. 1. 0. 0. 0.]
+DEBUG:root:the portfolio change this period is : 1.0145313739776611
+DEBUG:root:a new experience, indexed by 10895, was appended
+INFO:root:total returns are 81.313%
+DEBUG:root:==============================
+INFO:root:the step is 324
+DEBUG:root:the raw omega is [0.   0.13 0.   0.77 0.1 ]
+DEBUG:root:the portfolio change this period is : 1.0064994956372315
+DEBUG:root:a new experience, indexed by 10896, was appended
+INFO:root:total returns are 82.491%
+DEBUG:root:==============================
+INFO:root:the step is 325
+DEBUG:root:the raw omega is [0.   0.02 0.   0.48 0.5 ]
+DEBUG:root:the portfolio change this period is : 0.9999999888241291
+DEBUG:root:a new experience, indexed by 10897, was appended
+INFO:root:total returns are 82.491%
+DEBUG:root:==============================
+INFO:root:the step is 326
+DEBUG:root:the raw omega is [0.   0.03 0.   0.61 0.36]
+DEBUG:root:the portfolio change this period is : 1.0000000279396772
+DEBUG:root:a new experience, indexed by 10898, was appended
+INFO:root:total returns are 82.491%
+DEBUG:root:==============================
+INFO:root:the step is 327
+DEBUG:root:the raw omega is [0.   0.05 0.   0.5  0.45]
+DEBUG:root:the portfolio change this period is : 0.9957210936807974
+DEBUG:root:a new experience, indexed by 10899, was appended
+INFO:root:total returns are 81.710%
+DEBUG:root:==============================
+INFO:root:the step is 328
+DEBUG:root:the raw omega is [0.   0.   0.   0.02 0.98]
+DEBUG:root:the portfolio change this period is : 1.0112457892942626
+DEBUG:root:a new experience, indexed by 10900, was appended
+INFO:root:total returns are 83.754%
+DEBUG:root:==============================
+INFO:root:the step is 329
+DEBUG:root:the raw omega is [0.   0.01 0.   0.54 0.45]
+DEBUG:root:the portfolio change this period is : 0.9943668612172254
+DEBUG:root:a new experience, indexed by 10901, was appended
+INFO:root:total returns are 82.718%
+DEBUG:root:==============================
+INFO:root:the step is 330
+DEBUG:root:the raw omega is [0.   0.   0.01 0.87 0.12]
+DEBUG:root:the portfolio change this period is : 1.0043571288105038
+DEBUG:root:a new experience, indexed by 10902, was appended
+INFO:root:total returns are 83.515%
+DEBUG:root:==============================
+INFO:root:the step is 331
+DEBUG:root:the raw omega is [0.   0.01 0.   0.93 0.06]
+DEBUG:root:the portfolio change this period is : 0.9985462584182345
+DEBUG:root:a new experience, indexed by 10903, was appended
+INFO:root:total returns are 83.248%
+DEBUG:root:==============================
+INFO:root:the step is 332
+DEBUG:root:the raw omega is [0.   0.   0.   0.98 0.02]
+DEBUG:root:the portfolio change this period is : 1.0000000186264515
+DEBUG:root:a new experience, indexed by 10904, was appended
+INFO:root:total returns are 83.248%
+DEBUG:root:==============================
+INFO:root:the step is 333
+DEBUG:root:the raw omega is [0.   0.   0.   0.95 0.05]
+DEBUG:root:the portfolio change this period is : 0.9999999888241291
+DEBUG:root:a new experience, indexed by 10905, was appended
+INFO:root:total returns are 83.248%
+DEBUG:root:==============================
+INFO:root:the step is 334
+DEBUG:root:the raw omega is [0.   0.01 0.01 0.89 0.09]
+DEBUG:root:the portfolio change this period is : 1.001819563631811
+DEBUG:root:a new experience, indexed by 10906, was appended
+INFO:root:total returns are 83.581%
+DEBUG:root:==============================
+INFO:root:the step is 335
+DEBUG:root:the raw omega is [0.   0.06 0.12 0.61 0.21]
+DEBUG:root:the portfolio change this period is : 1.0041335572323602
+DEBUG:root:a new experience, indexed by 10907, was appended
+INFO:root:total returns are 84.340%
+DEBUG:root:==============================
+INFO:root:the step is 336
+DEBUG:root:the raw omega is [0.   0.06 0.05 0.66 0.23]
+DEBUG:root:the portfolio change this period is : 0.9980091767858419
+DEBUG:root:a new experience, indexed by 10908, was appended
+INFO:root:total returns are 83.973%
+DEBUG:root:==============================
+INFO:root:the step is 337
+DEBUG:root:the raw omega is [0.   0.17 0.11 0.61 0.11]
+DEBUG:root:the portfolio change this period is : 0.9990225708186093
+DEBUG:root:a new experience, indexed by 10909, was appended
+INFO:root:total returns are 83.793%
+DEBUG:root:==============================
+INFO:root:the step is 338
+DEBUG:root:the raw omega is [0.   0.2  0.09 0.7  0.01]
+DEBUG:root:the portfolio change this period is : 1.0010053089904263
+DEBUG:root:a new experience, indexed by 10910, was appended
+INFO:root:total returns are 83.978%
+DEBUG:root:==============================
+INFO:root:the step is 339
+DEBUG:root:the raw omega is [0.   0.43 0.1  0.44 0.03]
+DEBUG:root:the portfolio change this period is : 1.0000000055879354
+DEBUG:root:a new experience, indexed by 10911, was appended
+INFO:root:total returns are 83.978%
+DEBUG:root:==============================
+INFO:root:the step is 340
+DEBUG:root:the raw omega is [0.   0.37 0.14 0.44 0.05]
+DEBUG:root:the portfolio change this period is : 1.0000000037252903
+DEBUG:root:a new experience, indexed by 10912, was appended
+INFO:root:total returns are 83.978%
+DEBUG:root:==============================
+INFO:root:the step is 341
+DEBUG:root:the raw omega is [0.   0.39 0.18 0.35 0.08]
+DEBUG:root:the portfolio change this period is : 0.9993770903577399
+DEBUG:root:a new experience, indexed by 10913, was appended
+INFO:root:total returns are 83.863%
+DEBUG:root:==============================
+INFO:root:the step is 342
+DEBUG:root:the raw omega is [0.   0.56 0.15 0.21 0.08]
+DEBUG:root:the portfolio change this period is : 1.0008664095345257
+DEBUG:root:a new experience, indexed by 10914, was appended
+INFO:root:total returns are 84.023%
+DEBUG:root:==============================
+INFO:root:the step is 343
+DEBUG:root:the raw omega is [0.   0.57 0.15 0.11 0.17]
+DEBUG:root:the portfolio change this period is : 0.9999618864213558
+DEBUG:root:a new experience, indexed by 10915, was appended
+INFO:root:total returns are 84.016%
+DEBUG:root:==============================
+INFO:root:the step is 344
+DEBUG:root:the raw omega is [0.   0.05 0.02 0.93 0.  ]
+DEBUG:root:the portfolio change this period is : 0.9990235397109637
+DEBUG:root:a new experience, indexed by 10916, was appended
+INFO:root:total returns are 83.836%
+DEBUG:root:==============================
+INFO:root:the step is 345
+DEBUG:root:the raw omega is [0.   0.99 0.   0.01 0.  ]
+DEBUG:root:the portfolio change this period is : 0.9983624128109349
+DEBUG:root:a new experience, indexed by 10917, was appended
+INFO:root:total returns are 83.535%
+DEBUG:root:==============================
