@@ -12,7 +12,7 @@ script_to_run = os.path.join(
 
 # specify the tunable parameters as cmd arguments and their possible ranges
 params_to_tune = {
-    "--learning_rate": {"type": "values", "values": [1e-10, 1e-9, 1e-8, 1e-7, 1e-6]},
+    "--learning_rate": {"type": "values", "values": [5e-7, 1e-6, 5e-6, 1e-5, 5e-5]},
     "--weight_decay_dense": {
         "type": "values",
         "values": [0, 5e-10, 5e-9, 5e-8, 5e-7, 5e-6],
