@@ -55,7 +55,7 @@ cd \${DATASET_DIR}/PGPortfolio
 python -m scripts.json_to_cli "$@"
 
 python -m main --mode=generate --repeat=1
-python -m main --mode=train --processes=1 --device=gpu
+python -m main --mode=train --processes=1 --device=gpu --restore_dir="pretrained/netfile"
 
 echo \"Copying results to main node\"
 rsync -uap --progress train_package/ \${OUTPUT_DIR}
