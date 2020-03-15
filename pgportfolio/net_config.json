@@ -1,7 +1,10 @@
 {
   "layers": [
     {
-      "filter_shape": [1, 2],
+      "filter_shape": [
+        1,
+        2
+      ],
       "filter_number": 3,
       "type": "ConvLayer"
     },
@@ -9,17 +12,17 @@
       "filter_number": 10,
       "type": "EIIE_Dense",
       "regularizer": "L2",
-      "weight_decay": 5e-10
+      "weight_decay": 5e-8
     },
     {
       "type": "EIIE_Output_WithW",
       "regularizer": "L2",
-      "weight_decay": 0
+      "weight_decay": 5e-5
     }
   ],
   "training": {
     "steps": 60000,
-    "learning_rate": 0.0001,
+    "learning_rate": 5e-5,
     "batch_size": 20,
     "buffer_biased": 5e-5,
     "snap_shot": false,
@@ -32,9 +35,9 @@
     "coin_number": 4,
     "global_period": 86400,
     "feature_number": 1,
-    "test_portion": 0.03339720777,
+    "test_portion": 0.09039268955,
     "online": false,
-    "start_date": "1986/12/31",
+    "start_date": "2005/12/01",
     "end_date": "2017/01/01",
     "volume_average_days": 30
   },
