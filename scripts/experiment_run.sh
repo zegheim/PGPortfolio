@@ -33,7 +33,7 @@ export JOB_ID=\${SLURM_JOB_NAME%???}
 mkdir -p \${TMP}/datasets
 export DATASET_DIR=\${TMP}/datasets/\${JOB_ID}
 
-export OUTPUT_DIR=/home/\${STUDENT_ID}/Experiments/PretrainingHyperparameterTuning/\${JOB_ID}
+export OUTPUT_DIR=/home/\${STUDENT_ID}/Experiments/FinalHyperparameterTuning/\${JOB_ID}
 mkdir -p \${OUTPUT_DIR}
 
 date
