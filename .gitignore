@@ -103,6 +103,8 @@ ENV/
 # database
 database/
 train_package/
+!train_package/pretrained/
+!train_package/pretrained/*
 
 .DS_Store
 .idea/
