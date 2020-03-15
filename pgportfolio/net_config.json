@@ -1,50 +1,50 @@
 {
-  "layers": [
-    {
-      "filter_shape": [
-        1,
-        2
-      ],
-      "filter_number": 3,
-      "type": "ConvLayer"
+    "layers": [
+        {
+            "filter_shape": [
+                1,
+                2
+            ],
+            "filter_number": 3,
+            "type": "ConvLayer"
+        },
+        {
+            "filter_number": 10,
+            "type": "EIIE_Dense",
+            "regularizer": "L2",
+            "weight_decay": 5e-07
+        },
+        {
+            "type": "EIIE_Output_WithW",
+            "regularizer": "L2",
+            "weight_decay": 5e-05
+        }
+    ],
+    "training": {
+        "steps": 60000,
+        "learning_rate": 5e-05,
+        "batch_size": 20,
+        "buffer_biased": 5e-05,
+        "snap_shot": false,
+        "fast_train": true,
+        "training_method": "Adam",
+        "loss_function": "loss_function6"
     },
-    {
-      "filter_number": 10,
-      "type": "EIIE_Dense",
-      "regularizer": "L2",
-      "weight_decay": 5e-8
+    "input": {
+        "window_size": 20,
+        "coin_number": 4,
+        "global_period": 86400,
+        "feature_number": 1,
+        "test_portion": 0.03339720777,
+        "online": false,
+        "start_date": "1986/12/31",
+        "end_date": "2017/01/01",
+        "volume_average_days": 30
     },
-    {
-      "type": "EIIE_Output_WithW",
-      "regularizer": "L2",
-      "weight_decay": 5e-5
+    "trading": {
+        "trading_consumption": 0,
+        "rolling_training_steps": 30,
+        "learning_rate": 5e-05,
+        "buffer_biased": 5e-05
     }
-  ],
-  "training": {
-    "steps": 60000,
-    "learning_rate": 2.5e-4,
-    "batch_size": 20,
-    "buffer_biased": 5e-5,
-    "snap_shot": false,
-    "fast_train": true,
-    "training_method": "Adam",
-    "loss_function": "loss_function6"
-  },
-  "input": {
-    "window_size": 20,
-    "coin_number": 4,
-    "global_period": 86400,
-    "feature_number": 1,
-    "test_portion": 0.03339720777,
-    "online": false,
-    "start_date": "1986/12/31",
-    "end_date": "2017/01/01",
-    "volume_average_days": 30
-  },
-  "trading": {
-    "trading_consumption": 0,
-    "rolling_training_steps": 30,
-    "learning_rate": 5e-5,
-    "buffer_biased": 5e-5
-  }
 }

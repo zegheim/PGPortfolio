@@ -29,8 +29,8 @@ def main():
         if args.weight_decay_output:
             config["layers"][2]["weight_decay"] = float(args.weight_decay_output)
         if args.learning_rate:
-            config["training"]["learning_rate"] = float(args.weight_decay_output)
-            config["trading"]["learning_rate"] = float(args.weight_decay_output)
+            config["training"]["learning_rate"] = float(args.learning_rate)
+            config["trading"]["learning_rate"] = float(args.learning_rate)
         if args.batch_size:
             batch_size = int(args.batch_size)
             config["training"]["batch_size"] = batch_size
