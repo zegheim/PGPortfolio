@@ -1,17 +1,20 @@
 {
   "layers": [
     {
+      "activation_function": "selu",
       "filter_shape": [1, 2],
       "filter_number": 3,
       "type": "ConvLayer"
     },
     {
+      "activation_function": "selu",
       "filter_number": 10,
       "type": "EIIE_Dense",
       "regularizer": "L2",
       "weight_decay": 0
     },
     {
+      "activation_function": "selu",
       "type": "EIIE_Output_WithW",
       "regularizer": "L2",
       "weight_decay": 0
