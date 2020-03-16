@@ -34,8 +34,8 @@
     "feature_number": 1,
     "test_portion": 0.09039268955,
     "online": false,
-    "start_date": "2007/12/01",
-    "end_date": "2019/01/01",
+    "start_date": "2008/12/01",
+    "end_date": "2020/01/01",
     "volume_average_days": 30
   },
   "trading": {
