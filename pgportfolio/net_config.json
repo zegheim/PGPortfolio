@@ -9,12 +9,12 @@
       "filter_number": 10,
       "type": "EIIE_Dense",
       "regularizer": "L2",
-      "weight_decay": 5e-8
+      "weight_decay": 0
     },
     {
       "type": "EIIE_Output_WithW",
       "regularizer": "L2",
-      "weight_decay": 5e-5
+      "weight_decay": 0
     }
   ],
   "training": {
