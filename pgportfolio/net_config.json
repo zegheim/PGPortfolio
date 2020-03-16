@@ -8,7 +8,7 @@
     },
     {
       "activation_function": "elu",
-      "filter_number": 10,
+      "filter_number": 2,
       "type": "EIIE_Dense",
       "regularizer": "L2",
       "weight_decay": 0
